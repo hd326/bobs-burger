@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #000000;
+    background-color: #ffffff;
 }
 
 header {
@@ -23,7 +23,7 @@ header h1 {
     font-size: 56px;
     font-weight: 100;
     margin: 0 0 0 20px;
-    color: #007717;
+    color: #ff9d00;
     text-decoration: underline #ffeb00;
 }
 
@@ -31,7 +31,6 @@ header .est {
     font-size: 28px;
     font-weight: 100;
     margin: -50px 0 0 500px;
-
 }
 
 .header-con {
@@ -60,21 +59,20 @@ header .menu-header ul li a {
 }
 
 header .menu-header ul li:hover {
-    background-color: #8a9fa7;
-    color: white;
+    background-color: #ffff3c;
+    color: #000000;
 }
 
 header .menu-header ul li:hover a {
-    background-color: #8a9fa7;
-    color: #ffffff;
+    background-color: #ffff3c;
+    color: #000000;
 }
-
 
 header .menu-header ul .menu-drop {
     border: none;
     position: absolute;
     width: 200px;
-    background-color: #f7ffcd;
+    background-color: #ff9d00;
     color: #000000;
     font-weight: 100;
     margin: 10px 0px 0px -10px;
@@ -89,12 +87,9 @@ header .menu-header ul .menu-drop li {
     margin: 0px 0 0px 0px;
 }
 
-
 header .menu-header li:hover ul li {
     display: block;
 }
-
-
 
 /* Social Styling */
 
@@ -107,7 +102,7 @@ header .social-m ul li {
     display: inline;
     color: white;
     margin: -15px 0 0 20px;
-    background-color: #460000;
+    background-color: #f4a900;
     padding: 17px 11px 10px 10px;
     border-radius: 5px;
 }
@@ -116,26 +111,18 @@ header .social-m ul li span {
     width: 30px;
 }
 
-
 header .social-m ul li a {
     color: white;
-}
-
-.wrapper {
-    width: 100%;
-    margin: auto;
 }
 
 .main-photo {
     background: url(photos/environment.jpg) no-repeat 0;
     width: 100%;
-    min-height: 700px;
+    min-height: 500px;
     border-bottom: 1px solid gray;
     background-size: cover;
     text-align: center;
 }
-
-
 
 .main-photo p {
     font-size: 56px;
@@ -151,8 +138,8 @@ header .social-m ul li a {
     font-family: bungee;
 }
 
-.main-photo #to-letter{
-    font-family:passion one;
+.main-photo #to-letter {
+    font-family: passion one;
 }
 
 
@@ -162,74 +149,69 @@ header .social-m ul li a {
 
 /* After Banner Image Boxes */
 
-.leftboxes {
-    width: 25%;
-    float: left;
+.findwrap {
+    background-color: red;
 }
 
-.leftboxes img {
-    width: 100%;
+.findnear {
+    text-align: center;
+    font-family: passion one;
+    font-weight: 100;
+    font-size: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    letter-spacing: 7px;
+    color: #3c3c3c;
 }
 
-.topbox {
-    height: 50%;
+.findnear nav ul li {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 0 0 20px;
 }
 
-.topbox img {
-    width: 100%;
+.findnear input {
+    padding: 8px;
+    font-size: 20px;
+    text-indent: 10px;
 }
 
-.bottombox img {
-    width: 100%;
+.findnear button {
+    padding: 9px 30px 10px 30px;
+    margin: -10px 0 0 -20px;
+    border: none;
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+    font-family: "oswald";
+    font-size: 16px;
 }
-
-.bottombox {
-    height: 50%;
-    margin: -4px 0 0 0;
-}
-
-
-.middleboxes {
-    width: 50%;
-    float: left;
-}
-
-.middleboxes img {
-    width: 100%;
-    filter: grayscale(40%);
-    transition: .5s ease-in-out;
-}
-
-.middleboxes img:hover {
-    width: 100%;
-    filter: grayscale(0%)
-}
-
-
-.rightboxes {
-    width: 25%;
-    float: left;
-}
-
 
 /* States Container Work */
 
 /* States Container Work */
 
 /* States Container Work */
+
+.states-section {
+    background-color: #d3d3d3;
+    width: 100%;
+    margin: auto;
+    height: 100%;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
 
 .states-container {
-    width: 100%;
-    height: 100%;
+    width: 80%;
     margin: auto;
+    margin-top: 50px;
     text-align: center;
     font-family: 'passion one';
-    filter: grayscale(55%);
+    background-color: white;
 }
 
-.states-container .top-states:hover {
-    filter: grayscale(100%);
-}
+.states-container .top-states:hover {}
 
 .states-container .top-states {
     width: 50%;
@@ -237,7 +219,6 @@ header .social-m ul li a {
     position: relative;
     background: url(photos/big.jpeg) no-repeat -200px -300px;
     min-height: 280px;
-    margin: -4px 0 0 0;
 }
 
 .states-container .top-states:before {
@@ -284,7 +265,7 @@ header .social-m ul li a {
 
 .bottom-states:hover:before {
     transform: translateY(0);
-    padding: 155px;
+    padding: 155px 0 0 0;
     background-color: rgba(0, 0, 0, 0.6);
     transition: 0.5s;
 }
@@ -298,7 +279,6 @@ header .social-m ul li a {
     height: 350px;
 }
 
-
 .bottom-states {
     width: 25%;
     float: left;
@@ -306,12 +286,6 @@ header .social-m ul li a {
     overflow: hidden;
     background: url(photos/small.jpg) no-repeat 0px -110px;
     min-height: 350px;
-}
-
-.bottom-states:nth-child(5) {
-    background: url(photos/small3.jpg) no-repeat 0px -00px;
-    background-size: cover;
-
 }
 
 .bottom-states:nth-child(2) {
@@ -329,44 +303,104 @@ header .social-m ul li a {
     background-size: cover;
 }
 
+.bottom-states:nth-child(5) {
+    background: url(photos/small3.jpg) no-repeat;
+    background-size: cover;
+}
+
+.bottom-states:nth-child(6) {
+    background: url(photos/small2.jpg) no-repeat 0px;
+    background-size: cover;
+}
+
 .bottom-states img {
     width: 100%;
     height: 350px;
 }
 
-
 /* The Food Container Work */
 
 /* The Food Container Work */
 
 /* The Food Container Work */
+
+.food-section {
+    background-color: #d3d3d3;
+    width: 100%;
+    margin: auto;
+    padding: 50px 0 0 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.food-section h3 {
+    font-size: 50px;
+    transform: translateY(14%);
+    padding-bottom: 10px;
+}
+
+.food-section .findnear ul li button {
+    margin-top: -10px;
+}
 
 .food-container {
-    width: 100%;
+    width: 80%;
     height: 100%;
     margin: auto;
     font-family: Passion One;
-    background-color: #555555;
+    background-color: #505050;
 }
 
 .food-container .food-menu {
-    width: 25%;
-    float: left;
-    text-align: center;
+    margin: 0 0 0 10px;
+    width: 23.9%;
     position: relative;
+    overflow: hidden;
 }
 
-.food-container .food-menu .food-des {
+.food-container .food-menu:before {
     position: absolute;
-    top: 50%;
-    left: 40%;
-    color: white;
-    opacity: 0;
-    transition: .2s ease-in-out;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transform: translateY(90%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    content: attr(data-text);
+    transition: 0.5s .1s;
+    color: #fff;
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
 }
 
-.food-container .food-menu:hover .food-des {
-    opacity: 1;
+.food-container .food-menu:nth-of-type(1) {
+    float: left;
+    background: url(photos/burger000.jpg) no-repeat -10px;
+    min-height: 500px;
+    background-size: cover;
+}
+
+.food-container .food-menu:nth-of-type(2) {
+    float: left;
+    background: url(photos/burger111.jpg) no-repeat;
+    min-height: 500px;
+    background-size: cover;
+}
+
+.food-container .food-menu:nth-of-type(3) {
+    float: left;
+    background: url(photos/burger222.jpg) no-repeat 0px;
+    min-height: 500px;
+    background-size: cover;
+}
+
+.food-container .food-menu:nth-of-type(4) {
+    float: left;
+    background: url(photos/burger333.jpg) no-repeat;
+    min-height: 500px;
+    background-size: cover;
 }
 
 .food-container .food-menu img {
@@ -374,99 +408,433 @@ header .social-m ul li a {
     width: 100%;
 }
 
-.food-container .food-menu:hover img {
-    filter: blur(1px) brightness(50%);
+.social-section {
+    margin: 80px 0 0 0;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 50px;
 }
 
-.food-container .food-menu2:hover .food-des {
-    opacity: 1;
-    transition: .2s ease-in-out;
+.social-section h3 {
+    font-size: 50px;
 }
 
-.food-container .food-menu2:hover img {
-    filter: blur(1px) brightness(50%);
-}
-
-.food-container .food-menu2 {
-    width: 25%;
-    float: left;
+.social-intro span {
     text-align: center;
+    font-family: old standard tt;
+    color: orange;
+    font-size: 25px;
+}
+
+.social-intro {
+    font-family: old standard tt;
+    text-align: center;
+    font-size: 20px;
+    width: 80%;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.social-holder {
+    width: 80%;
+    margin: auto;
+}
+
+.social-events {
+    float: left;
+    width: 23%;
+    background: url(photos/burger00.jpg) no-repeat;
+    min-height: 300px;
+    background-size: cover;
+    margin: 10px 0 0 10px;
     position: relative;
-    margin-top: -4px;
 }
 
-.food-container .food-menu2 img {
-    height: 400px;
-    width: 100%;
+.social-events:nth-of-type(3) {
+    float: left;
+    width: 23%;
+    background: url(photos/events.jpg) no-repeat;
+    min-height: 300px;
+    background-size: cover;
+    margin: 10px 0 0 10px;
 }
 
-.food-container .food-menu2 .food-des {
+.social-events .social-text {
     position: absolute;
-    top: 50%;
-    left: 40%;
+    bottom: 0;
     color: white;
-    opacity: 0;
-    transition: 0.3s ease-in-out;
-}
-
-.footer {
+    background-color: rgba(0, 0, 0, .3);
     width: 100%;
+    overflow: none;
     margin: auto;
     text-align: center;
-    clear: both;
-    background-color: black;
+    height: 60%;
+    font-family: passion one;
+    padding: 10px;
+    font-size: 33px;
+}
+
+.social-events .social-text h4 {
+    letter-spacing: 5px;
+}
+
+.social-events .social-text p {
+    font-size: 18px;
+    font-family: old standard tt;
+}
+
+.social-events .social-text button {
+    border: none;
+    background-color: orange;
     color: white;
-    font-size: 12px;
-    padding: 40px 0px 50px 10px;
-
-
-
+    padding: 12px;
+    border-radius: 5px;
+    font-family: "oswald";
+    padding: 10px 30px 10px 30px;
+    margin: 10px 0 0 0;
 }
 
-.footer .left {
+.social-hour .social-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: white;
+    background-color: rgba(0, 0, 0, .3);
+    width: 100%;
+    overflow: none;
+    margin: auto;
+    text-align: center;
+    height: 50%;
+    font-family: passion one;
+    padding: 10px;
+    font-size: 33px;
+}
+
+.social-hour .social-text h4 {
+    letter-spacing: 5px;
+}
+
+.social-hour .social-text p {
+    font-size: 18px;
+    font-family: old standard tt;
+}
+
+.social-hour .social-text button {
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    font-family: "oswald";
+    padding: 10px 30px 10px 30px;
+    margin: 0px 0 0 0;
+}
+
+.social-hour {
     float: left;
+    width: 50%;
+    background: url(photos/social.jpg) no-repeat;
+    min-height: 300px;
+    background-size: cover;
+    margin: 10px 0 0 10px;
+    position: relative;
 }
 
-.footer .right-bar {
-    float: right;
-    margin-right: 40px;
+.instagram-sec {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    font-family: old standard tt;
+    overflow: hidden;
+    margin-bottom: 50px;
 }
 
-.footer .left {
+.instagram-sec h3 {
+    font-size: 50px;
+}
+
+.instagram-pics {
+    width: 19.6%;
     float: left;
-    margin-left: 5px;
+    margin: 0 0 0 1px;
+    position: relative;
 }
 
-.footer .right-bar ul li {
+.instagram-pics:hover img {
+    filter: brightness(50%);
+}
+
+.instagram-pics:hover p {
+    opacity: 1;
+}
+
+.instagram-pics p {
+    position: absolute;
+    bottom: 10%;
+    color: white;
+    opacity: 0;
+    padding: 40px;
+}
+
+.instagram-pics:nth-of-type(1) {
+    width: 20%;
+    float: left;
+    margin: 0 0 0 -10px;
+}
+
+.instagram-pics img {
+    width: 100%;
+    height: 250px;
+}
+
+.newsletter {
+    width: 100%;
+    margin: auto;
+    background-color: black;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.news-sec {
+    text-align: center;
+    font-family: passion one;
+    font-weight: 100;
+    font-size: 30px;
+    background-color: #000000;
+    padding: 70px;
+    letter-spacing: 7px;
+    color: #ffffff;
+}
+
+.news-sec nav ul li {
     list-style: none;
-    display: inline;
-    padding: 0 5px;
+    margin: 0 0 0 20px;
 }
 
-.footer .right-bar ul li:before {
-    content: '';
-    background-color: white;
-    width: 1px;
-    height: 11px;
-    position: absolute;
-    margin: 1px -7px;
+.news-sec button {
+    padding: 10px 30px 10px 30px;
+    margin: 20px 0 0 -20px;
+    border: none;
+    color: white;
+    background-color: orange;
+    border-radius: 5px;
+    font-family: "oswald";
 }
 
-.footer .right-bar ul li:first-child:before {
-    content: '';
-    background-color: white;
-    width: 0px;
-    height: 11px;
-    position: absolute;
-    margin: 1px -7px;
+.news {
+    width: 75%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.news-box {
+    width: 32%;
+    float: left;
+    margin: 0 0 0 20px;
+    border: px solid black;
+    margin-top: 50px;
+    line-height: 25px;
+}
+
+.news-box:nth-of-type(1) {
+    width: 32%;
+    float: left;
+    margin: 0px 0 0 0px;
+}
+
+.news-box:nth-of-type(3) {
+    width: 32%;
+    float: left;
+    margin: 0px 0 0 20px;
+    overflow: scroll;
+    height: 450px;
+}
+
+.in-news {
+    float: none;
+
+}
+
+.news-box img {
+    width: 100%;
+}
+
+.news-box p {
+    color: orange;
+    text-align: none;
+    font-family: "slabo 27px";
+}
+
+.news-box #blog-info {
+    color: black;
+    font-family: "Slabo 27px";
+}
+
+.news-box h3 {
+    font-family: passion one;
+    font-size: 36px;
+    letter-spacing: 5px
+}
+
+.news-box h4 {
+    color: black;
+    font-family: "slabo 27px";
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.news-box h5 {
+    color: orange;
+    font-family: "slabo 27px";
+    font-size: 16px;
+    font-weight: 100;
+}
+
+#in-news-font {
+    color: orange;
+}
+
+.news {
+    margin-top: 50px;
+}
+
+.footer-space {
+    width: 100%;
+    border: .3px solid #d9d9d9;
+    margin: 50px 0 0 0;
 }
 
 .footer {
-    font-family: 'old standard tt'
+    width: 75%;
+    color: gray;
+    margin: auto;
+    overflow: hidden;
+    margin-top: 50px;
+    font-family: oswald;
+}
+
+.footer-links {
+    width: 20%;
+    float: left;
+    font-size: 18px;
+}
+
+.footer-links nav ul li a {
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-links nav ul a {
+    text-decoration: none;
+    color: gray;
+}
+
+.footer-links nav ul li a:hover {
+    color: orange;
+    transition: .1s ease;
+}
+
+.footer-links nav ul a:hover {
+    color: orange;
+}
+
+.footer-links:nth-of-type(2) {
+    margin: 0 0 0 -120px;
+}
+
+.footer-links:nth-of-type(3) {
+    margin: 0 0 0 -20px;
+}
+
+.footer-links:nth-of-type(4) {
+    margin: 0 0 0 -20px;
+}
+
+.footer-links:nth-of-type(5) {
+    margin: 0 0 0 -100px;
+}
+
+.footer-links:nth-of-type(6) {
+    margin: 0 0 0 -140px;
+}
+
+.footer-links nav ul li {
+    list-style: none;
+}
+
+.footer-links button {
+    border: none;
+    background-color: orange;
+    color: white;
+    padding: 20px;
+    width: 200px;
+    margin-left: auto;
+    font-family: oswald;
+    font-size: 18px;
+    float: right;
+    overflow: hidden;
+}
+
+.footer-links button span {
+    margin: 0 0 0 50px;
+}
+
+.footer2 {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0 50px 0px;
+    font-size: 14px;
+}
+
+.footer2-links li {
+    list-style: none;
+    display: inline-block;
+    float: left;
+    font-family: lato;
+    margin: 0 0 0 50px;
+    color:gray;
+}
+
+.footer2-links li span {
+    margin: 0 0 0 20px;
+}
+
+.footer-space2 {
+    content: '';
+    width: 80%;
+    margin: auto;
+    margin-top: 50px;
+    border: .5px solid #d4d4d4;
 }
 
 
 
+
+
+
+
+@media (max-width:1626px) {
+
+    .footer2 .footer2-links:nth-of-type(1) {
+        list-style: none;
+        display: block;
+        float: left;
+        font-family: lato;
+        margin: 0 0 0 -50px;
+    }
+
+    .footer-links {
+        margin: 0 0 0 70px;
+    }
+    
+    .food-container .food-menu:nth-of-type(1) {
+        float: left;
+        background: url(photos/burger000.jpg) no-repeat -50px;
+        min-height: 500px;
+        background-size: cover;
+    }
+}
 
 
 @media (max-width:1544px) {
@@ -477,53 +845,49 @@ header .social-m ul li a {
         background: url(photos/big.jpeg) no-repeat -200px -300px;
         min-height: 280px;
         margin: -4px 0 0 0;
-        background-size: coger;
+        background-size: cover;
     }
 
-
-
-}
-
-
-@media (max-width: 1140px) {
-    .food-container .food-menu {
-        width: 50%;
+    .footer2-links {
+        list-style: none;
+        display: block;
         float: left;
-        text-align: center;
-        position: relative;
+        font-family: lato;
+        margin: 0 0 0 -25px;
     }
-
-    .food-container .food-menu img {
-        height: 600px;
-
+    
+    .food-menu:nth-of-type(1){
+        
     }
-
-    .food-container .food-menu:nth-child(3) {
-        margin: -4px 0 0 0
-    }
-
-    .food-container .food-menu:nth-child(4) {
-        margin: -4px 0 0 0;
-    }
-
-    .food-container .food-menu2 {
-        width: 50%;
+    
+    .food-container .food-menu:nth-of-type(1) {
         float: left;
-        text-align: center;
-        position: relative;
+        background: url(photos/burger000.jpg) no-repeat -60px;
+        min-height: 500px;
+        background-size: cover;
     }
-
-    .food-container .food-menu2 img {
-        height: 600px;
-
-    }
-
 }
 
 @media (max-width:1497px) {
     header .menu-header ul {
         float: none;
         text-align: center;
+    }
+
+    .instagram-pics {
+        float: left;
+        width: 48%;
+    }
+
+    .instagram-pics img {
+        height: 300px;
+    }
+
+    header .social-m {
+        margin: 30px 0 0 0;
+        float: none;
+        text-align: center;
+        width: 100%;
     }
 }
 
@@ -546,6 +910,129 @@ header .social-m ul li a {
         width: 100%;
     }
 
+    header .social-m {
+        margin: 30px 0 0 0;
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer2-links {
+        list-style: none;
+        display: block;
+        float: left;
+        font-family: lato;
+        margin: 0 0 0 -30px;
+    }
+
+    .footer-links {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        float: left;
+        display: inline;
+    }
+
+    .footer-links:nth-of-type(1) {
+        margin: 0 0 0 0;
+    }
+
+    .footer-links:nth-of-type(2) {
+        margin: 0 0 0 0;
+    }
+
+    .footer-links:nth-of-type(2) li {
+        display: none;
+    }
+
+    .footer-links:nth-of-type(3) {
+        margin: 0 0 0 0;
+    }
+
+    .footer-links:nth-of-type(4) {
+        margin: 0 0 0 0;
+
+    }
+
+    .footer-links:nth-of-type(5) {
+        margin: 0 0 0 0;
+
+    }
+
+    .footer-links:nth-of-type(6) {
+        margin: 0 0 0 0;
+
+    }
+
+    .footer-links button {
+        border: none;
+        background-color: orange;
+        color: white;
+        padding: 20px;
+        width: 80%;
+        margin-left: auto;
+        font-family: oswald;
+        font-size: 18px;
+        float: none;
+        overflow: hidden;
+        margin-top: 15px;
+    }
+
+}
+
+@media (max-width:1351px) {
+    .footer2 .footer2-links {
+        float: none;
+        width: 100%;
+    }
+
+    .footer2-links li {
+        list-style: none;
+        float: none;
+        width: 100%;
+        font-family: lato;
+        margin: 10px 0 0 20px;
+    }
+
+    .footer2-links li span:nth-of-type(1) {
+        margin: 0 0 0 0px;
+    }
+
+    .footer2 .footer2-links:nth-of-type(1) {
+        margin: 0 0 0 -20px;
+    }
+
+    .news-box {
+        width: 100%;
+        float: left;
+        margin: 0 0 0 20px;
+        border: px solid black;
+        margin-top: 50px;
+        line-height: 25px;
+        text-align: center;
+    }
+
+    .news-box:nth-of-type(1) {
+        width: 100%;
+        float: left;
+        margin: 0px 0 0 0px;
+    }
+
+    .news-box:nth-of-type(2) {
+        width: 100%;
+        float: left;
+        margin: 50px 0 0 0px;
+    }
+
+    .news-box:nth-of-type(3) {
+        width: 100%;
+        float: left;
+        margin: 50px 0 0 0;
+        overflow: scroll;
+        height: 450px;
+        text-align: left;
+    }
+
 }
 
 @media (max-width:1268px) {
@@ -565,25 +1052,95 @@ header .social-m ul li a {
         text-align: center;
         width: 100%;
     }
+
+    .food-container .food-menu {
+        width: 47%;
+    }
+
+    .food-container .food-menu:nth-of-type(1) {
+        float: left;
+        background: url(photos/burger000.jpg) no-repeat -0px;
+        min-height: 500px;
+        background-size: cover;
+    }
+
+    .social-events {
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0 0 0 0;
+        height: 500px;
+        position: relative;
+    }
+
+    .social-hour {
+        width: 100%;
+        margin: 10px 0 0 0px;
+        padding: 0 0 0 0;
+        height: 500px;
+        background: url(photos/social.jpg) no-repeat 0px 0px;
+        background-size: cover;
+
+    }
+
+    .social-events:nth-of-type(3) {
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0 0 0 0;
+
+    }
+
+    .social-holder {
+        width: 90%;
+    }
+
+}
+
+@media (max-width: 1140px) {
+    .food-container .food-menu {
+        width: 47.7%;
+        float: left;
+        text-align: center;
+        position: relative;
+    }
+
+    .food-container .food-menu img {
+        height: 600px;
+
+    }
 }
 
 
-@media (max-width:1024px){
+@media (max-width:1024px) {
     .main-photo p {
-    font-size: 45px;
-    float: right;
-    font-weight: bold;
-    margin: 20px 30px 0 0;
-    color: #ffffff;
-    text-align:center;
+        font-size: 45px;
+        float: right;
+        font-weight: bold;
+        margin: 20px 30px 0 0;
+        color: #ffffff;
+        text-align: center;
+    }
+
+    .main-photo p span {
+        letter-spacing: 5px;
+        font-weight: none;
+        float: none;
+        text-align: center;
+    }
+
+    .food-container .food-menu {
+        width: 100%;
+    }
 }
 
-.main-photo p span {
-    letter-spacing: 5px;
-    font-weight: none;
-    float:none;
-    text-align:center;
-}
+@media (max-width:944px) {
+    .findwrap .findnear li:nth-of-type(1) {
+        width: 100%;
+        float: none;
+    }
+    
+    .findwrap .findnear li:nth-of-type(2) {
+        margin-top:10px;
+    }
 }
 
 @media (max-width:874px) {
@@ -600,7 +1157,6 @@ header .social-m ul li a {
         position: relative;
         min-height: 280px;
         margin: -4px 0 0 0;
-
     }
 
     .states-container .top-states {
@@ -611,20 +1167,39 @@ header .social-m ul li a {
         min-height: 280px;
         margin: -4px 0 0 0;
     }
-    
+
     .main-photo p {
-    font-size: 32px;
-    font-weight: bold;
-    margin: 300px 30px 0 0;
-    color: #ffffff;
-        bottom:50%;
-}
-
-    
-    
+        font-size: 32px;
+        font-weight: bold;
+        margin: 300px 30px 0 0;
+        color: #ffffff;
+        bottom: 50%;
+    }
 
 
+    .social-hour {
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0 0 0 0;
+        height: 500px;
+        background: url(photos/social.jpg) no-repeat -70px 0px;
+        background-size: cover;
+    }
 
+    .social-events:nth-of-type(3) {
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .instagram-pics {
+        float: left;
+        width: 100%;
+    }
+
+    .instagram-pics img {
+        height: 400px;
+    }
 }
 
 
@@ -650,6 +1225,21 @@ header .social-m ul li a {
 
     header .social-m ul li a {
         color: white;
+    }
+
+    .social-hour {
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0 0 0 0;
+        height: 500px;
+        background: url(photos/social.jpg) no-repeat -100px 0px;
+        background-size: cover;
+    }
+
+    .social-events:nth-of-type(3) {
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0 0 0 0;
     }
 }
 
@@ -678,7 +1268,7 @@ header .social-m ul li a {
         text-align: center;
         transform: translate(5%);
     }
-    
+
     header .social-m ul li {
         list-style: none;
         display: inline;
@@ -687,14 +1277,34 @@ header .social-m ul li a {
         background-color: #460000;
         padding: 17px 11px 10px 10px;
         border-radius: 5px;
-        display:block;
+        display: block;
     }
 
     header .social-m ul li span {
         width: 30px;
     }
-    
-    
 
+    .social-hour {
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0 0 0 0;
+        height: 500px;
+        background: url(photos/social.jpg) no-repeat -253px 0px;
+        background-size: cover;
+    }
+
+    .social-events:nth-of-type(3) {
+        width: 100%;
+        margin: 10px 0 0 0;
+        padding: 0 0 0 0;
+    }
+
+    .findwrap .findnear li button {
+        width: 100%;
+        float: none;
+        margin: 10px 0 0 0;
+
+    }
 
 }
+
