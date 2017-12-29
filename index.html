@@ -74,12 +74,14 @@
         </div>
     </header>
 
-
-    <div class="main-photo">
+<div class="main-photos">
+    <div class="main-photo"></div>
+</div>       
+        <!--
         <p><span>Welcome</span> <span id="to-letter">to Bobs' Burgerhouse</span></p>
+        -->
 
-
-    </div>
+   
 
     <!-- After Banner Image Boxes -->
 
@@ -163,7 +165,7 @@
             <div class='food-menu' data-text="Charlotte Mustard">
             </div>
 
-            <div class='food-menu' data-text="Louisiana Deluxe">
+            <div class='food-menu' data-text="Louisiana Burger">
             </div>
 
             <div class='food-menu' data-text="Denver Crispy">
@@ -444,6 +446,36 @@
                 <span class="fa fa-envelope"></span></li>
         </div>
     </div>
+
+
+    <script>
+        
+        var index = 1;
+
+        function slideImage(n) {
+            index = index + n;
+            slider(index);
+        }
+
+        slider(1);
+        
+        function slider(n) {
+            var i;
+            var x = document.getElementsByClassName('slider');
+            
+            for (i = 0; i < x.length; i++) {
+
+                if (n > x.length) {
+                    index = 1;
+                }
+                if (n < 1) {
+                    index = x.length;
+                }
+                x[i].style.display = "none";
+            }
+            x[index - 1].style.display = "block";
+        }
+    </script>
 
 
 </body>
