@@ -372,7 +372,7 @@ header .social-m ul li a {
 }
 
 .food-container .food-menu {
-    margin: 0 0 0 20px;
+    margin: 0 0 0 19px;
     width: 23.1%;
     position: relative;
     overflow: hidden;
@@ -1112,7 +1112,7 @@ header .social-m ul li a {
 
 @media (max-width: 1140px) {
     .food-container .food-menu {
-        width: 50%;
+        width: 47.5%;
         float: left;
         text-align: center;
         position: relative;
@@ -1156,6 +1156,25 @@ header .social-m ul li a {
     .food-container .food-menu {
         width: 100%;
     }
+    
+    .food-container .food-menu:nth-of-type(2) {
+    float: left;
+    background: url(photos/burger111.jpg) no-repeat 0;
+    min-height: 500px;
+    background-size: cover;
+}
+    .food-container .food-menu:nth-of-type(3) {
+    float: left;
+    background:url(photos/burger222.jpg) no-repeat 0;
+    background-size: cover;
+}
+    
+    .food-container .food-menu:nth-of-type(4) {
+    float: left;
+    background:url(photos/burger333.jpg) no-repeat 0;
+    background-size: cover;
+}
+    
 }
 
 @media (max-width:944px) {
