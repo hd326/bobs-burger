@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -10,42 +9,81 @@ body {
 }
 
 header {
-    padding: 22px;
-    background-color: #ffffff;
-    font-family: '';
-    font-weight: bold;
     font-family: Bungee;
-    background-color: #989898;
-    border-bottom: 3px solid black;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-bottom:3px solid black;
+    z-index:1
 }
 
-header h1 {
-    font-size: 56px;
-    font-weight: 100;
-    margin: 0 0 0 20px;
-    color: #ff9d00;
-    text-decoration: underline #ffeb00;
+.logo {
+    float: left;
 }
 
-header .est {
-    font-size: 28px;
-    font-weight: 100;
-    margin: -50px 0 0 500px;
+.logo img {
+    width: 100px;
+    float: left;
+    margin: 24px 0 0 0;
+}
+
+.logo h1 {
+    font-size: 50px;
+    color: white;
+    float: left;
+    text-decoration: underline orange;
+}
+
+.social-media {
+    position: absolute;
+    top: 0;
+    color: white;
+}
+
+.social-media:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.social-media ul li {
+    display: block;
+    position: relative;
+    margin: 10px 0 0 30px;
+}
+
+.social-media ul li span {
+    position: absolute;
+}
+
+.social-media ul li:hover {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.social-media ul li {
+    height: 25px;
+    width: 100%;
+}
+
+.social-media ul li span:hover {
+    color: orange;
 }
 
 .header-con {
-    width: 80%;
+    width: 90%;
     margin: auto;
+    overflow: hidden;
     text-align: center;
+    z-index:5
 }
 
-header .menu-header ul {
+header nav {
     float: right;
+    margin: 50px 0 0 0;
 }
 
-header .menu-header ul li {
+header nav ul {
     list-style: none;
-    margin: 0px 0 0 20px;
+}
+
+header nav ul li {
+    margin: 0 0 0 10px;
     text-transform: uppercase;
     font-size: 14px;
     letter-spacing: 1px;
@@ -53,68 +91,125 @@ header .menu-header ul li {
     padding: 10px 10px 10px 10px;
 }
 
-header .menu-header ul li a {
-    text-decoration: none;
-    color: #382f2f;
-}
-
-header .menu-header ul li:hover {
-    background-color: #ffff3c;
-    color: #000000;
-}
-
-header .menu-header ul li:hover a {
-    background-color: #ffff3c;
-    color: #000000;
-}
-
-header .menu-header ul .menu-drop {
+header nav ul li .menu-drop {
     border: none;
     position: absolute;
-    width: 200px;
-    background-color: #ff9d00;
-    color: #000000;
+    width: 180px;
+    background-color: orange;
+    color: #ffffff;
     font-weight: 100;
-    margin: 10px 0px 0px -10px;
+    margin: 10px 0 0 -10px;
+    z-index:5;
 }
 
-header .menu-header ul .menu-drop li {
+header nav ul .menu-drop li {
     border: none;
     display: none;
     font-size: 12px;
     background-color: ;
     padding: 10px 10px 10px 10px;
-    margin: 0px 0 0px 0px;
+    margin: 0px 0 0 0px;
 }
 
-header .menu-header li:hover ul li {
+.hamburger{
+    position:relative;
+}
+
+.hamburger span {
+    display: none;
+}
+
+.hamburger:hover {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.hamburger-menu nav ul li{
+    display:block;
+}
+
+/* hover state */
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header nav ul li:hover {
+    background-color: orange;
+    color: #ffffff;
+}
+
+header nav ul li ul li:hover {
+    background-color: orange;
+    color: #ffffff;
+}
+
+header nav ul li:hover a {
+    background-color: orange;
+    color: #ffffff;
+}
+
+header nav li:hover ul li {
     display: block;
 }
 
-/* Social Styling */
-
-header .social-m ul {
-    margin: 10px 0 10px 0px;
+.burger-house{
+    position:absolute;
+    top:40%;
+    font-family:'passion one';
+    color:#ffffff;
+    font-size:85px;
+    right:10%;
+    margin: 0px 50px 0 0;
+    z-index:0;
 }
 
-header .social-m ul li {
-    list-style: none;
-    display: inline;
+#to-letter{
+    font-style:italic;
+}
+
+.main-photos{
+    position:relative;
+    height:700px;
+    overflow:hidden;
+}
+
+.main-photo{
+    height:700px;
+    position:absolute;
+    width:100%;
+}
+
+.main-photo img{
+    width:100%;
+}
+
+.btn {
     color: white;
-    margin: -15px 0 0 20px;
-    background-color: #f4a900;
-    padding: 17px 11px 10px 10px;
-    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 5;
+    top: 240px;
+    border-radius: 50px;
+    border: none;
+    color: #ffffff;
+    background-color: #848484;
 }
 
-header .social-m ul li span {
-    width: 30px;
+#btn-1{
+    font-size:18px;
 }
 
-header .social-m ul li a {
-    color: white;
+#btn-2 {
+    float: right;;
+    position: relative;
+    font-size:18px;
 }
 
+
+
+/*
 .main-photo {
     background: url(photos/environment.jpg) no-repeat 0;
     width: 100%;
@@ -122,7 +217,6 @@ header .social-m ul li a {
     border-bottom: 1px solid gray;
     background-size: cover;
     text-align: center;
-
 }
 
 .main-photo:nth-of-type(2) {
@@ -142,6 +236,7 @@ header .social-m ul li a {
     background-size: cover;
     text-align: center;
 }
+*/
 
 .main-photo p {
     font-size: 56px;
@@ -161,26 +256,21 @@ header .social-m ul li a {
     font-family: passion one;
 }
 
-
 /* After Banner Image Boxes */
 
-/* After Banner Image Boxes */
-
-/* After Banner Image Boxes */
-.findwrap{
-    padding:25px
+.findwrap {
+    padding: 25px
 }
-
 
 .findnear {
     text-align: center;
-    font-family: passion one;
+    font-family: 'passion one';
     font-weight: 100;
     font-size: 20px;
     background-color: #ffffff;
     padding: 20px;
     letter-spacing: 7px;
-    color: #3c3c3c;
+    color: #6d6d6d;
 }
 
 .findnear nav ul li {
@@ -230,7 +320,9 @@ header .social-m ul li a {
     background-color: white;
 }
 
-.states-container .top-states:hover {}
+.states-container .top-states:hover {
+    
+}
 
 .states-container .top-states {
     width: 50%;
@@ -633,8 +725,8 @@ header .social-m ul li a {
     font-family: passion one;
     font-weight: 100;
     font-size: 30px;
-    background-color: #000000;
-    padding: 70px;
+    background-color: #868686;
+    padding: 25px;
     letter-spacing: 7px;
     color: #ffffff;
 }
@@ -841,11 +933,6 @@ header .social-m ul li a {
 }
 
 
-
-
-
-
-
 @media (max-width:1626px) {
 
     .footer2 .footer2-links:nth-of-type(1) {
@@ -860,7 +947,6 @@ header .social-m ul li a {
         margin: 0 0 0 70px;
     }
 }
-
 
 @media (max-width:1544px) {
     .bottom-states {
@@ -883,10 +969,6 @@ header .social-m ul li a {
 }
 
 @media (max-width:1497px) {
-    header .menu-header ul {
-        float: none;
-        text-align: center;
-    }
 
     .instagram-pics {
         float: left;
@@ -896,12 +978,29 @@ header .social-m ul li a {
     .instagram-pics img {
         height: 300px;
     }
+    
+    .logo h1 {
+        font-size: 45px;
+    }
 
-    header .social-m {
-        margin: 30px 0 0 0;
-        float: none;
-        text-align: center;
-        width: 100%;
+    .logo img {
+        width: 85px;
+    }
+
+    header nav {
+        margin: 42px 0 0 0;
+    }
+
+    header nav ul {
+        margin: 0 30px 0 0;
+    }
+
+    header nav ul li {
+        font-size: 12px;
+    }
+
+    .social-media {
+        margin: -10px 0 0 20px;
     }
 }
 
@@ -991,7 +1090,41 @@ header .social-m ul li a {
         overflow: hidden;
         margin-top: 15px;
     }
+}
 
+@media (max-width:1408px) {
+    header nav ul .nav-menu {
+        display: none;
+    }
+
+    .header-con {
+        width: 100%;
+    }
+
+    .logo {
+        float: none;
+        text-align: center;
+        background-color: blue;
+        transform: translateX(2.5%);
+    }
+
+    .hamburger span {
+        display: inline;
+        margin: 0 0 0 0;
+    }
+
+    .hamburger {
+        margin: -100px 0 0 0;
+    }
+
+    .hamburger:hover {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    .social-media {
+        margin: -10px 0 0 -30px;
+        display: none;
+    }
 }
 
 @media (max-width:1351px) {
@@ -1046,7 +1179,6 @@ header .social-m ul li a {
         height: 450px;
         text-align: left;
     }
-
 }
 
 @media (max-width:1268px) {
@@ -1093,20 +1225,17 @@ header .social-m ul li a {
         height: 500px;
         background: url(photos/social.jpg) no-repeat 0px 0px;
         background-size: cover;
-
     }
 
     .social-events:nth-of-type(3) {
         width: 100%;
         margin: 10px 0 0 0;
         padding: 0 0 0 0;
-
     }
 
     .social-holder {
         width: 90%;
     }
-
 }
 
 @media (max-width: 1140px) {
@@ -1133,7 +1262,6 @@ header .social-m ul li a {
         height: 600px;
     }
 }
-
 
 @media (max-width:1024px) {
     .main-photo p {
@@ -1173,28 +1301,23 @@ header .social-m ul li a {
         background: url(photos/burger333.jpg) no-repeat 0;
         background-size: cover;
     }
-
 }
 
 @media (max-width:944px) {
-    
-    .findwrap{
-        padding:20px 0
+
+    .findwrap {
+        padding: 20px 0
     }
-    
+
     .findwrap .findnear li:nth-of-type(1) {
         width: 100%;
         float: none;
-        margin-bottom:10px;
+        margin-bottom: 10px;
     }
-    
-    .findwrap .findnear button{
-        transform:translateY(7.5%);
+
+    .findwrap .findnear button {
+        transform: translateY(7.5%);
     }
-    
-    
-    
-    
 }
 
 @media (max-width:874px) {
@@ -1202,7 +1325,6 @@ header .social-m ul li a {
         display: block;
     }
 }
-
 
 @media (max-width:789px) {
     .bottom-states {
@@ -1230,7 +1352,6 @@ header .social-m ul li a {
         bottom: 50%;
     }
 
-
     .social-hour {
         width: 100%;
         margin: 10px 0 0 0;
@@ -1257,6 +1378,38 @@ header .social-m ul li a {
 
 }
 
+@media (max-width:768px) {
+    .logo {
+        float: none;
+        text-align: center;
+        background-color: blue;
+        transform: translateX(2.5%);
+    }
+
+    .logo h1 {
+        float: left;
+        font-size: 36px;
+        margin: 10px 0 0 0
+    }
+
+    .logo img {
+        float: left;
+        width: 75px;
+        margin: 27px 0 0 0;
+    }
+
+    . header nav {
+        float: none;
+    }
+
+    header nav ul {
+        margin: 0 0 0 0px;
+    }
+
+    header nav ul li {
+        margin: 0 0 0 0;
+    }
+}
 
 @media (max-width:628px) {
     header .social-m ul {
@@ -1264,19 +1417,13 @@ header .social-m ul li a {
     }
 
     header .social-m ul li {
-        list-style: none;
-        display: inline;
-        color: white;
-        margin: -15px 0 0 0px;
-        background-color: #460000;
+        margin: 0 0 0 0;
         padding: 17px 11px 10px 10px;
-        border-radius: 5px;
     }
 
     header .social-m ul li span {
         width: 30px;
     }
-
 
     header .social-m ul li a {
         color: white;
@@ -1296,7 +1443,7 @@ header .social-m ul li a {
         margin: 10px 0 0 0;
         padding: 0 0 0 0;
     }
-    
+
     .findwrap {
         margin: 0 0 0 0;
         overflow: hidden;
@@ -1329,6 +1476,23 @@ header .social-m ul li a {
     }
 }
 
+@media (max-width:559px) {
+    .logo h1 {
+        font-size: 28px;
+        margin: 21.5px 0 0 0;
+    }
+    .logo img {
+        width: 50px;
+        margin: 38px 0 0 0;
+    }
+    .hamburger span {
+        font-size: 28px;
+        margin: -100px 0 0 0;
+    }
+}
+
+
+
 
 @media (max-width:468px) {
     header h1 {
@@ -1357,12 +1521,7 @@ header .social-m ul li a {
 
     header .social-m ul li {
         list-style: none;
-        display: inline;
-        color: white;
         margin: 2px 0 0 0px;
-        background-color: #460000;
-        padding: 17px 11px 10px 10px;
-        border-radius: 5px;
         display: block;
     }
 
@@ -1392,8 +1551,24 @@ header .social-m ul li a {
     }
 }
 
-@media (max-width:375px) {
 
+@media (max-width:425px) {
+    .logo h1 {
+        font-size: 22px;
+        margin: 27.5px 0 0 0;
+    }
+    .logo img {
+        width: 33px;
+        margin: 41.75px 0 0 0;
+    }
+    .hamburger span {
+        font-size: 28px;
+        margin: -100px 0 0 0;
+    }
+}
+
+
+@media (max-width:375px) {
 
     .instagram-sec h3 {
         transform: translateX(-10%);
@@ -1426,7 +1601,32 @@ header .social-m ul li a {
 
         transform: translateX(-7.5%)
     }
+    
+    .logo h1 {
+        font-size: 21px;
+        margin: 31px 0 0 0;
+    }
+    .logo img {
+        width: 33px;
+        margin: 42.75px 0 0 0;
+    }
+    .hamburger span {
+        font-size: 28px;
+        margin: -100px 0 0 0;
+    }
+}
 
-
-
+@media (max-width:325) {
+    .logo h1 {
+        font-size: 20px;
+        margin: 31px 0 0 0;
+    }
+    .logo img {
+        width: 33px;
+        margin: 42..5px 0 0 0;
+    }
+    .hamburger span {
+        font-size: 28px;
+        margin: -100px 0 0 0;
+    }
 }

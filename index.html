@@ -11,89 +11,77 @@
 
 <body>
     <header>
-        <h1>Bobs' Burgerhouse</h1>
         <div class="header-con">
-            <nav class="menu-header">
+            <div class=logo><img src="photos/burger.png">
+                <h1>Bobs' Burgerhouse</h1>
+            </div>
+            <nav>
                 <ul>
-                    <li><a href=#>Locations</a>
+                    <li class="nav-menu"><a href=#>Locations</a>
                         <ul class="menu-drop">
                             <li>Search</li>
                             <li>We're growing</li>
                         </ul>
-
-
-
                     </li>
-                    <li><a href=#>Menu</a>
+                    <li class="nav-menu"><a href=#>Menu</a>
                         <ul class="menu-drop">
                             <li>Nutrition & allergen</li>
                             <li>Order Online</li>
                             <li>Our Food</li>
-
                         </ul>
                     </li>
-
-                    <li><a href=#>Club and Cards</a>
+                    <li class="nav-menu"><a href=#>Club and Cards</a>
                         <ul class="menu-drop">
                             <li>Weekly Offers</li>
                             <li>e-Gift cards</li>
-
                         </ul>
                     </li>
-                    <li><a href=#>About Us</a>
+                    <li class="nav-menu"><a href=#>About Us</a>
                         <ul class="menu-drop">
                             <li>Our Story</li>
                             <li>Careers</li>
-
                         </ul>
-
                     </li>
-                    <li><a href=#>Contact</a>
+                    <li class="nav-menu"><a href=#>TALK TO US</a>
                         <ul class="menu-drop">
                             <li>Contacts</li>
                             <li>Barnies' Social</li>
-
                         </ul>
-
-
                     </li>
-                </ul>
-            </nav>
 
+                    <li class=social-media>
+                        <ul>
+                            <li><span class="fa fa-facebook"></span></li>
+                            <li><span class="fa fa-twitter"></span></li>
+                            <li><span class="fa fa-instagram"></span></li>
+                        </ul>
+                    </li>
+                    <li class=hamburger><span class="fa fa-bars fa-3x"></span></li>
 
-            <nav class="social-m">
-                <ul>
-                    <li><a href=#><span class="fa fa-facebook fa-2x"></span></a></li>
-                    <li><a href=#><span class="fa fa-twitter fa-2x"></span></a></li>
-                    <li><a href=#><span class="fa fa-youtube fa-2x"></span></a></li>
-                    <li><a href=#><span class="fa fa-instagram fa-2x"></span></a></li>
-                    <li><a href=#><span class="fa fa-snapchat fa-2x"></span></a></li>
-                    <li><a href=#><span class="fa fa-envelope fa-2x"></span></a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-<div class="main-photos">
-    <div class="main-photo"></div>
-</div>       
-        <!--
-        <p><span>Welcome</span> <span id="to-letter">to Bobs' Burgerhouse</span></p>
-        -->
+    <div class="main-photos">
+        <button class="btn" onClick="slideImage(-1)" id="btn-1">&#10094;</button>
+        <button class="btn" onClick="slideImage(1)" id="btn-2">&#10095;</button>
+        <div class="main-photo"><img src=photos/environment.jpg></div>
+        <div class="main-photo"><img src=photos/environment2.jpg></div>
+        <div class="main-photo"><img src=photos/environment3.jpg></div>
+        <div class="burger-house">
+            <p><span>Welcome</span> <span id="to-letter">to Bobs' Burgerhouse</span></p>
+        </div>
 
-   
-
-    <!-- After Banner Image Boxes -->
-
-
-    <!-- After Banner Image Boxes -->
+    </div>
+    
 
     <div class="findwrap">
         <div class="findnear">
             <nav>
                 <ul>
                     <li>
-                        <h3>FIND A RESTAURANT NEAR YOU:</h3>
+                        <h3>LOCATIONS NEAR YOU</h3>
                     </li>
                     <li>
                         <form><input type="text" placeholder="Enter zip or city, state"></form>
@@ -101,48 +89,26 @@
                     <li><button type="submit"><span>SEARCH</span></button></li>
                 </ul>
             </nav>
-
-
-
-
         </div>
-
     </div>
 
     <div class="states-section">
-
         <div class="states-container">
-
             <div class="top-states" data-title="SOUTHERN CALIFORNIA">
-
-
             </div>
             <div class="top-states" data-title="NORTHERN CALIFORNIA">
-
-
             </div>
             <div class="bottom-states" data-title="LAS VEGAS">
-
-
             </div>
             <div class="bottom-states" data-title="CHICAGO">
-
-
             </div>
             <div class="bottom-states" data-title="NEW YORK">
-
-
             </div>
             <div class="bottom-states" data-title="JAPAN">
-
-
-
             </div>
-
-
         </div>
     </div>
-
+    
     <div class="food-section">
         <div class=findnear>
             <nav>
@@ -153,37 +119,24 @@
                     <li><button type="submit">VIEW FULL MENU</button></li>
                 </ul>
             </nav>
-
         </div>
-
         <div class='food-container'>
-
-
             <div class='food-menu' data-text="Whole Crisp Original">
             </div>
-
             <div class='food-menu' data-text="Charlotte Mustard">
             </div>
-
             <div class='food-menu' data-text="Louisiana Burger">
             </div>
-
             <div class='food-menu' data-text="Denver Crispy">
             </div>
-
             <div class='food-menu2'>
             </div>
-
             <div class='food-menu2'>
             </div>
-
             <div class='food-menu2'>
             </div>
-
             <div class='food-menu2'>
             </div>
-
-
         </div>
     </div>
 
@@ -196,13 +149,9 @@
                     </li>
                 </ul>
             </nav>
-
         </div>
         <div class="social-intro">
             <p><span>(Lorem Ipsum)</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque neque orci, dictum vitae tellus quis, sodales ultricies risus. Donec suscipit porta erat, vitae lacinia mi ullamcorper non. Phasellus feugiat arcu id velit dictum congue a in elit. Cras tincidunt nunc sit amet arcu sagittis vulputate. Vestibulum eu velit vel dui varius tempus ut id eros. Praesent suscipit, mi at pretium mollis, mi orci faucibus erat, sollicitudin faucibus erat augue sit amet elit. Aliquam vitae lorem pulvinar, condimentum sapien eget, sollicitudin lectus. </p>
-
-
-
         </div>
 
         <div class="social-holder">
@@ -231,7 +180,6 @@
             </div>
         </div>
     </div>
-
 
     <div class="instagram-sec">
         <div class=findnear>
@@ -277,7 +225,6 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit.</p>
         </div>
 
-
     </div>
 
     <div class="newsletter">
@@ -290,11 +237,8 @@
                     <li><button>SIGN UP</button></li>
                 </ul>
             </nav>
-
         </div>
-
     </div>
-
 
     <div class="news">
         <div class="news-box">
@@ -305,10 +249,7 @@
             <p id="blog-info">NOVEMBER 2017</p>
             <h4>BURGERING WITH STYLE - THE REALIZATION THAT IT DOESN'T GET ANY BETTER.</h4>
             <h5>READ MORE <span class="fa fa-play fa-1x"></span></h5>
-
-
         </div>
-
 
         <div class="news-box">
             <img src="photos/blog2.jpg">
@@ -316,7 +257,6 @@
             <h4>OUR SUCCESS AND EVERYONE WHO HELPED US ALONG THE WAY..</h4>
             <h5>READ MORE <span class="fa fa-play fa-1x"></span></h5>
         </div>
-
 
         <div class="news-box">
 
@@ -340,14 +280,7 @@
 
     </div>
 
-
-
-
-
-
     <div class=footer-space></div>
-
-
 
     <div class="footer">
         <div class="footer-links">
@@ -357,7 +290,6 @@
                 </ul>
             </nav>
         </div>
-
 
         <div class="footer-links">
             <nav>
@@ -373,7 +305,6 @@
             </nav>
         </div>
 
-
         <div class="footer-links">
             <nav>
                 <ul>
@@ -384,8 +315,6 @@
             </nav>
         </div>
 
-
-
         <div class="footer-links">
             <nav>
                 <ul>
@@ -394,8 +323,6 @@
                 </ul>
             </nav>
         </div>
-
-
 
         <div class="footer-links">
             <nav>
@@ -414,11 +341,6 @@
                 </ul>
             </nav>
         </div>
-
-
-
-
-
 
     </div>
 
@@ -449,7 +371,6 @@
 
 
     <script>
-        
         var index = 1;
 
         function slideImage(n) {
@@ -458,10 +379,11 @@
         }
 
         slider(1);
-        
+
         function slider(n) {
             var i;
-            var x = document.getElementsByClassName('slider');
+            
+            var x = document.getElementsByClassName('main-photo');
             
             for (i = 0; i < x.length; i++) {
 
