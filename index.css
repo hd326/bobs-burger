@@ -690,13 +690,10 @@ header nav li:hover ul li {
     filter: brightness(50%);
 }
 
-.instagram-pics:hover .instagram-text {
-    display:block;
-}
 
 .instagram-text {
     position: absolute;
-    bottom: -50%;
+    bottom: -20%;
     color: white;
     display:none;
     padding: 40px;

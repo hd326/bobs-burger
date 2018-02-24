@@ -369,6 +369,22 @@
         </div>
     </div>
 
+     <script src="jquery-3.2.1.js"></script>
+     
+     <script>
+        $(function(){
+             $('.instagram-pics').hover(
+                function() {
+                    $('.instagram-text', this).fadeIn();
+                },
+
+                function() {
+                    $('.instagram-text', this).fadeOut();
+                },
+            );
+        });
+    
+    </script>
 
     <script>
         var index = 1;
