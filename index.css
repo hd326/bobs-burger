@@ -691,14 +691,14 @@ header nav li:hover ul li {
 }
 
 .instagram-pics:hover .instagram-text {
-    opacity: 1;
+    display:block;
 }
 
 .instagram-text {
     position: absolute;
     bottom: -50%;
     color: white;
-    opacity: 0;
+    display:none;
     padding: 40px;
     width: 100%;
     height: 100%;
