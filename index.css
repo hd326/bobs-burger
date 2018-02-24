@@ -694,7 +694,7 @@ header nav li:hover ul li {
     opacity: 1;
 }
 
-.instagram-pics p {
+.instagram-text {
     position: absolute;
     bottom: 10%;
     color: white;
