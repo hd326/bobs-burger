@@ -66,9 +66,12 @@
     <div class="main-photos">
         <button class="btn" onClick="slideImage(-1)" id="btn-1">&#10094;</button>
         <button class="btn" onClick="slideImage(1)" id="btn-2">&#10095;</button>
-        <div class="main-photo"><img src=photos/environment.jpg></div>
+        <!--<div class="main-photo"><img src=photos/environment.jpg></div>
         <div class="main-photo"><img src=photos/environment2.jpg></div>
-        <div class="main-photo"><img src=photos/environment3.jpg></div>
+        <div class="main-photo"><img src=photos/environment3.jpg></div>-->
+        <div class="main-photo"></div>
+        <div class="main-photo"></div>
+        <div class="main-photo"></div>
         <div class="burger-house">
             <p><span>Welcome</span> <span id="to-letter">to Bobs' Burgerhouse</span></p>
         </div>
@@ -412,6 +415,10 @@
             }
             x[index - 1].style.display = "block";
         }
+        
+        var y = document.getElementsByClassName('main-photo').length;
+        
+        console.log(y);
     </script>
 
 
