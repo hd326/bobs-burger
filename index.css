@@ -212,7 +212,7 @@ header nav li:hover ul li {
 
 .burger-house nav ul {
     text-align: center;
-    padding: 0px;
+    padding: 100px;
     width: 100%;
     top: 40%;
 }
@@ -226,7 +226,7 @@ header nav li:hover ul li {
 }
 
 .burger-house nav ul #text-holder:nth-of-type(2) {
-    
+    float: none;
 }
 
 .burger-house nav ul #text-holder:nth-of-type(3) {
@@ -354,7 +354,17 @@ header nav li:hover ul li {
     }
 }
 
+@media (max-width: 1140px) {
+    .burger-house {
+        font-size: 5vw;
+    }
+}
 
+@media (max-width: 1024px) {
+    .burger-house {
+        font-size: 4vw;
+    }
+}
 
 /*
 .main-photo {
