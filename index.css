@@ -16,13 +16,13 @@ header {
 }
 
 .logo {
-    float: left;
+    
 }
 
 .logo img {
-    width: 110px;
-    float: left;
+    width: 100px;
     margin: 24px 0 0 0;
+    float:left;
 }
 
 .logo h1 {
