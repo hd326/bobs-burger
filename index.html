@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -73,11 +74,71 @@
         <div class="main-photo"></div>
         <div class="main-photo"></div>
         <div class="burger-house">
-            <p><span>Welcome</span> <span id="to-letter">to Bobs' Burgerhouse</span></p>
-        </div>
+            <!--<p><span id="welcome">Welcome</span> <span id="to-letter">to</span> <span id="bobs">Bobs' Burgerhouse</span></p>-->
+            <div id="burger-house-holder">
 
+                <!-- class="burger-house-text"><div class="burger-house-text-holder"><div class="burger-house-text-holder2">Welcome</div></div></div>
+            <div class="burger-house-text"><div class="burger-house-text-holder"><div class="burger-house-text-holder2">To</div></div></div>
+            
+            <div class="burger-house-text"><div class="burger-house-text-holder2"><div class="burger-house-text-holder">Burgerhouse</div></div></div>
+            <div class="burger-house-text"><div class="burger-house-text-holder"><div class="burger-house-text-holder2">Bobs'</div></div></div>-->
+
+                <nav>
+                <ul>
+                    <span id="text-holder"><span id="text-placer"><li>Welcome</li></span></span>
+                    <span id="text-holder"><span id="text-placer"><li>to</li></span></span>
+
+                    <span id="text-holder"><span id="text-placer"><li>Bobs' Burgerhouse</span></li>
+                    </span>
+                </ul>
+            </nav>
+            </div>
+        </div>
     </div>
-    
+
+    <script src="jquery-3.2.1.js"></script>
+    <script src="jquery-ui.min.js"></script>
+    <script>
+        $(function() {
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(1)').hide().animate({
+                left: 150,
+                opacity: "show"
+            }, 1500);
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(1)').css({
+                'position': 'relative'
+            });
+
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(2)').hide().animate({
+                left: 0,
+                opacity: "show"
+            }, 1500);
+
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(2)').css({
+                'position': 'relative'
+            });
+
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(3)').hide().animate({
+                right: 150,
+                opacity: "show"
+            }, 1500);
+
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(3)').css({
+                'position': 'relative'
+            });
+            /*
+            $('#burger-house-holder #text-holder(1)').hide().animate({
+                right: 200,
+                opacity: "show"
+            }, 1500);
+
+            $('#burger-house-holder #text-holder(1)').css({
+                'position': 'relative'
+            });
+            */
+        });
+    </script>
+
+
 
     <div class="findwrap">
         <div class="findnear">
@@ -111,7 +172,7 @@
             </div>
         </div>
     </div>
-    
+
     <div class="food-section">
         <div class=findnear>
             <nav>
@@ -216,13 +277,13 @@
             <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
         <div class="instagram-pics"><img src="photos/burger77.jpg">
-           <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
         <div class="instagram-pics"><img src="photos/burger88.jpg">
-           <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
         <div class="instagram-pics"><img src="photos/burger99.jpg">
-          <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
         <div class="instagram-pics"><img src="photos/burger111.jpg">
             <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
@@ -372,11 +433,11 @@
         </div>
     </div>
 
-     <script src="jquery-3.2.1.js"></script>
-     
-     <script>
-        $(function(){
-             $('.instagram-pics').hover(
+    <script src="jquery-3.2.1.js"></script>
+
+    <script>
+        $(function() {
+            $('.instagram-pics').hover(
                 function() {
                     $('.instagram-text', this).fadeIn();
                 },
@@ -400,9 +461,9 @@
 
         function slider(n) {
             var i;
-            
+
             var x = document.getElementsByClassName('main-photo');
-            
+
             for (i = 0; i < x.length; i++) {
 
                 if (n > x.length) {
@@ -415,12 +476,13 @@
             }
             x[index - 1].style.display = "block";
         }
-        
+
         var y = document.getElementsByClassName('main-photo').length;
-        
+
         console.log(y);
     </script>
 
 
 </body>
+
 </html>
