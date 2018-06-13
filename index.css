@@ -23,7 +23,7 @@ header .header-con {
 
 .logo {
     display: grid;
-    grid-template-columns: .1fr .9fr;
+    grid-template-columns: .01fr .99fr;
 }
 
 @media (max-width: 1633px) {
@@ -567,10 +567,14 @@ header nav li:hover ul li {
     color: #6d6d6d;
 }
 
-.findnear .nav nav ul li {
+.findnear nav ul li {
     display: inline-block;
     text-decoration: none;
     margin: 0 0 0 20px;
+}
+
+.findwrap .findnear nav ul {
+    list-style:none;
 }
 
 .findnear input {
@@ -581,7 +585,7 @@ header nav li:hover ul li {
 
 .findnear button {
     padding: 14px 30px 10px 30px;
-    margin: -10px 0 0 -20px;
+    margin: 10px 0 0 -20px;
     border: none;
     color: white;
     background-color: orange;
@@ -1971,7 +1975,7 @@ header nav li:hover ul li {
 
     .logo .burger h1 {
         font-size: 15px;
-        margin: 31px 0 0 0;
+        margin: 37px 0 0 0;
     }
 
     .logo .burger img {
