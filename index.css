@@ -1514,7 +1514,6 @@ header nav li:hover ul li {
 
     .food-container .food-menu img {
         height: 600px;
-
     }
 
     .food-container .food-menu2 {
@@ -1556,12 +1555,13 @@ header nav li:hover ul li {
         min-height: 500px;
         background-size: cover;
     }
+    
     .food-container .food-menu:nth-of-type(3) {
         float: left;
         background: url(photos/burger222.jpg) no-repeat 0;
         background-size: cover;
     }
-
+    
     .food-container .food-menu:nth-of-type(4) {
         float: left;
         background: url(photos/burger333.jpg) no-repeat 0;
@@ -1849,33 +1849,39 @@ header nav li:hover ul li {
     .food-container .food-menu:nth-of-type(1) {
         background: url(photos/burger000.jpg) no-repeat -75px;
         background-size: cover;
-        transform: translateX(-7.5%)
+        width:100%;
+        margin: 0px 0px 0px 0px;
     }
 
     .food-container .food-menu:nth-of-type(2) {
         background: url(photos/burger111.jpg) no-repeat -25px;
         background-size: cover;
-        transform: translateX(-7.5%)
+        width:100%;
+        margin: 0px 0px 0px 0px;
     }
 
     .food-container .food-menu:nth-of-type(3) {
 
-        transform: translateX(-7.5%)
+        width:100%;
+        margin: 0px 0px 0px 0px;
     }
 
     .food-container .food-menu:nth-of-type(4) {
 
-        transform: translateX(-7.5%)
+        width:100%;
+        margin: 0px 0px 0px 0px;
     }
 
     .logo h1 {
         font-size: 21px;
         margin: 31px 0 0 0;
     }
+    
     .logo img {
         width: 33px;
         margin: 42.75px 0 0 0;
     }
+    
     .hamburger span {
         font-size: 28px;
         margin: -100px 0 0 0;
