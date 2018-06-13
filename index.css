@@ -12,17 +12,42 @@ header {
     font-family: Bungee;
     background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 3px solid black;
-    z-index: 1
+    z-index: 1;
+    display: grid;
+}
+
+header .header-con {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 .logo {
-    
+    display: grid;
+    grid-template-columns: .1fr .9fr;
+}
+
+@media (max-width: 1633px) {
+    .logo .burger h1 {
+        font-size: 40px;
+        transform: translateY(11%);
+    }
+    header .header-con {
+        display: grid;
+        grid-template-columns: 1.8fr .2fr;
+    }
+}
+
+@media (max-width: 1188px) {
+    .logo .burger h1 {
+        font-size: 38px;
+        transform: translateY(11%);
+    }
 }
 
 .logo img {
     width: 100px;
     margin: 24px 0 0 0;
-    float:left;
+    float: left;
 }
 
 .logo h1 {
@@ -1370,7 +1395,6 @@ header nav li:hover ul li {
     .logo {
         float: none;
         text-align: center;
-        background-color: blue;
         transform: translateX(2.5%);
     }
 
@@ -1656,23 +1680,22 @@ header nav li:hover ul li {
     .logo {
         float: none;
         text-align: center;
-        background-color: blue;
         transform: translateX(2.5%);
     }
 
-    .logo h1 {
+    .logo .burger h1 {
         float: left;
-        font-size: 36px;
-        margin: 10px 0 0 0
+        font-size: 30px;
+        margin: 10px 0 0 0;
     }
 
     .logo img {
         float: left;
         width: 75px;
-        margin: 27px 0 0 0;
+        margin: 25px 0 0 0;
     }
 
-    . header nav {
+    header nav {
         float: none;
     }
 
@@ -1729,13 +1752,11 @@ header nav li:hover ul li {
         overflow: hidden;
         font-size: 36px;
     }
-    
-    .food-section .findnear nav ul li button{
+
+    .food-section .findnear nav ul li button {
         margin-top: 7.5px;
         padding: 7.5px 30px 5px 30px;
     }
-    
-    
 
     .findnear li {
         display: block;
@@ -1758,14 +1779,17 @@ header nav li:hover ul li {
 }
 
 @media (max-width:559px) {
-    .logo h1 {
+    .logo .burger h1 {
+        float: left;
         font-size: 28px;
-        margin: 21.5px 0 0 0;
+        margin: 10px 0 0 0;
     }
-    .logo img {
+    
+    .logo .burger img {
         width: 50px;
-        margin: 38px 0 0 0;
+        margin: 35px 0 0 0;
     }
+    
     .hamburger span {
         font-size: 28px;
         margin: -100px 0 0 0;
@@ -1875,17 +1899,28 @@ header nav li:hover ul li {
         min-height: 500px;
         background-size: cover;
     }
+    
+    .logo .burger h1 {
+        float: left;
+        font-size: 25px;
+        margin: 15px 0 0 0;
+    }
+    
+    .logo .burger img {
+        width: 50px;
+        margin: 35px 0 0 0;
+    }
 }
 
 
 @media (max-width:425px) {
-    .logo h1 {
+    .logo .burger h1 {
         font-size: 22px;
-        margin: 27.5px 0 0 0;
+        margin: 27px 0 0 0;
     }
-    .logo img {
+    .logo .burger img {
         width: 33px;
-        margin: 41.75px 0 0 0;
+        margin: 47.5px 0 0 0;
     }
     .hamburger span {
         font-size: 28px;
@@ -1930,18 +1965,18 @@ header nav li:hover ul li {
         margin: 0px 0px 0px 0px;
     }
 
-    .logo h1 {
-        font-size: 21px;
+    .logo .burger h1 {
+        font-size: 15px;
         margin: 31px 0 0 0;
     }
 
-    .logo img {
+    .logo .burger img {
         width: 33px;
         margin: 42.75px 0 0 0;
     }
 
     .hamburger span {
-        font-size: 28px;
+        font-size: 20px;
         margin: -100px 0 0 0;
     }
 }
