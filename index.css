@@ -31,6 +31,10 @@ header .header-con {
         font-size: 40px;
         transform: translateY(11%);
     }
+    
+}
+
+@media (max-width: 1408px){
     header .header-con {
         display: grid;
         grid-template-columns: 1.8fr .2fr;
@@ -563,7 +567,7 @@ header nav li:hover ul li {
     color: #6d6d6d;
 }
 
-.findnear nav ul li {
+.findnear .nav nav ul li {
     display: inline-block;
     text-decoration: none;
     margin: 0 0 0 20px;
@@ -1384,7 +1388,7 @@ header nav li:hover ul li {
 }
 
 @media (max-width:1408px) {
-    header nav ul .nav-menu {
+    header .nav nav ul .nav-menu {
         display: none;
     }
 
