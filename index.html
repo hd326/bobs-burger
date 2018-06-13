@@ -77,21 +77,37 @@
             <!--<p><span id="welcome">Welcome</span> <span id="to-letter">to</span> <span id="bobs">Bobs' Burgerhouse</span></p>-->
             <div id="burger-house-holder">
 
-                <!-- class="burger-house-text"><div class="burger-house-text-holder"><div class="burger-house-text-holder2">Welcome</div></div></div>
-            <div class="burger-house-text"><div class="burger-house-text-holder"><div class="burger-house-text-holder2">To</div></div></div>
-            
-            <div class="burger-house-text"><div class="burger-house-text-holder2"><div class="burger-house-text-holder">Burgerhouse</div></div></div>
-            <div class="burger-house-text"><div class="burger-house-text-holder"><div class="burger-house-text-holder2">Bobs'</div></div></div>-->
+                <div class="burger-house-text">
+                   
+                    <div class="burger-house-text-holder">
+                        <div class="burger-house-text-holder2">Welcome</div>
+                    </div>
+                </div>
+                <div class="burger-house-text">
+                    <div class="burger-house-text-holder">
+                        <div class="burger-house-text-holder2">To</div>
+                    </div>
+                </div>
 
-                <nav>
-                <ul>
-                    <span id="text-holder"><span id="text-placer"><li>Welcome</li></span></span>
-                    <span id="text-holder"><span id="text-placer"><li>to</li></span></span>
+                <div class="burger-house-text">
+                    <div class="burger-house-text-holder2">
+                        <div class="burger-house-text-holder">Burgerhouse</div>
+                    </div>
+                </div>
+                <div class="burger-house-text">
+                    <div class="burger-house-text-holder">
+                        <div class="burger-house-text-holder2">Bobs'</div>
+                    </div>
+                </div>
 
-                    <span id="text-holder"><span id="text-placer"><li>Bobs' Burgerhouse</span></li>
-                    </span>
-                </ul>
-            </nav>
+                <!--<nav>
+                    <ul>
+                        <span id="text-holder"><span id="text-placer"><li>Welcome</li></span></span>
+                        <span id="text-holder"><span id="text-placer"><li>to</li></span></span>
+                        <span id="text-holder"><span id="text-placer"><li>Bobs' Burgerhouse</span></li>
+                        </span>
+                    </ul>
+                </nav>-->
             </div>
         </div>
     </div>
@@ -99,13 +115,26 @@
     <script src="jquery-3.2.1.js"></script>
     <script src="jquery-ui.min.js"></script>
     <script>
+    
+    
+    </script>
+       
+       
+       
+       
+       
+    <script>
         $(function() {
-            $('#burger-house-holder nav ul #text-holder:nth-of-type(1)').hide().animate({
+
+            /*
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(1) li').hide().animate({
                 left: 0,
                 opacity: "show"
             }, 1500);
-            $('#burger-house-holder nav ul #text-holder:nth-of-type(1)').css({
-                'position': 'relative', 'float':'none'
+            
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(1) li').css({
+                'position': 'relative',
+                'float': 'none'
             });
 
             $('#burger-house-holder nav ul #text-holder:nth-of-type(2)').hide().animate({
@@ -114,7 +143,8 @@
             }, 1500);
 
             $('#burger-house-holder nav ul #text-holder:nth-of-type(2)').css({
-                'position': 'relative', 'float':'none'
+                'position': 'relative',
+                'float': 'none'
             });
 
             $('#burger-house-holder nav ul #text-holder:nth-of-type(3)').hide().animate({
@@ -123,8 +153,74 @@
             }, 1500);
 
             $('#burger-house-holder nav ul #text-holder:nth-of-type(3)').css({
-                'position': 'relative', 'float':'none'
+                'position': 'relative',
+                'float': 'none'
             });
+            */
+            /*
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(1)').show("slide", {
+                direction: 'left'
+            }, "slow");
+            */
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').css({
+                'left': '-200px'
+            });
+            
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(2)').css({
+                'left': '-200px'
+            });
+            
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(3)').css({
+                'right': '-200px'
+            });
+            
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(4)').css({
+                'right': '-200px'
+            });
+            
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').hide().animate({
+                left: 0,
+                opacity: "show"
+            }, 1500);
+            
+            
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(2)').hide().animate({
+                left: 0,
+                opacity: "show"
+            }, 1500);
+            
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(3)').hide().animate({
+                right: 0,
+                opacity: "show"
+            }, 1500);
+            
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(4)').hide().animate({
+                right: 0,
+                opacity: "show"
+            }, 1500);
+            
+            
+            /*
+            
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').css({
+                'position': 'relative',
+                'float': 'none'
+            });
+            
+            */
+
+            /*
+            $('#burger-house-holder nav ul #text-holder')
+                .css('opacity', 0)
+                .slideDown('slow')
+                .animate({
+                    opacity: 1
+                }, {
+                    queue: false,
+                    duration: 'slow'
+                });
+                */
+
             /*
             $('#burger-house-holder #text-holder(1)').hide().animate({
                 right: 200,
