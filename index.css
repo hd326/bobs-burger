@@ -752,7 +752,7 @@ header nav li:hover ul li {
     background-color: #d3d3d3;
     width: 100%;
     margin: auto;
-    padding: 50px 0 0 0;
+    padding: 0px 0 0 0;
     height: 100%;
     overflow: hidden;
 }
@@ -776,7 +776,7 @@ header nav li:hover ul li {
 }
 
 .food-container .food-menu {
-    margin: 0 0 0 19px;
+    margin: 50px 0 0 19px;
     width: 23.1%;
     position: relative;
     overflow: hidden;
@@ -801,7 +801,7 @@ header nav li:hover ul li {
 
 .food-container .food-menu:nth-of-type(1) {
     float: left;
-    background: url(photos/burger000.jpg) no-repeat;
+    background: url(photos/burger000.jpg) no-repeat -70px;
     min-height: 500px;
     background-size: cover;
 }
@@ -838,7 +838,7 @@ header nav li:hover ul li {
     text-align: center;
     position: relative;
     margin-top: -4px;
-    padding: 10px;
+    margin-bottom: 50px;
 }
 
 .food-container .food-menu2 img {
@@ -1527,7 +1527,7 @@ header nav li:hover ul li {
 
     .food-container .food-menu:nth-of-type(2) {
         float: left;
-        background: url(photos/burger000.jpg) no-repeat -30px 0px;
+        
         min-height: 500px;
         background-size: cover;
     }
@@ -1607,6 +1607,13 @@ header nav li:hover ul li {
     }
 
     /*removed float left here*/
+    .food-container .food-menu:nth-of-type(1) {
+        background: url(photos/burger000.jpg) no-repeat 0;
+        min-height: 500px;
+        background-size: cover;
+    }
+    
+    
     .food-container .food-menu:nth-of-type(2) {
         background: url(photos/burger111.jpg) no-repeat 0;
         min-height: 500px;
@@ -1615,7 +1622,8 @@ header nav li:hover ul li {
     }
 
     .food-container .food-menu:nth-of-type(3) {
-        background: url(photos/burger222.jpg) no-repeat 0;
+        background: url(photos/burger222.jpg) no-repeat 0px 0px;
+        min-height: 500px;
         background-size: cover;
     }
 
