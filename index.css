@@ -12,13 +12,14 @@ header {
     font-family: Bungee;
     background-color: rgba(0, 0, 0, 0.4);
     border-bottom: 3px solid black;
-    z-index: 1;
+    z-index: 5555;
     display: grid;
 }
 
 header .header-con {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    z-index: 1;
 }
 
 .logo {
@@ -31,10 +32,10 @@ header .header-con {
         font-size: 40px;
         transform: translateY(11%);
     }
-    
+
 }
 
-@media (max-width: 1408px){
+@media (max-width: 1408px) {
     header .header-con {
         display: grid;
         grid-template-columns: 1.8fr .2fr;
@@ -62,8 +63,8 @@ header .header-con {
 }
 
 .social-media {
-    position: absolute;
-    top: 0;
+    position:absolute;
+    top: -2%;
     color: white;
 }
 
@@ -99,7 +100,7 @@ header .header-con {
     margin: auto;
     overflow: hidden;
     text-align: center;
-    z-index: 5
+    z-index: 1;
 }
 
 header nav {
@@ -128,7 +129,7 @@ header nav ul li .menu-drop {
     color: #ffffff;
     font-weight: 100;
     margin: 10px 0 0 -10px;
-    z-index: 5;
+    z-index: 1;
 }
 
 header nav ul .menu-drop li {
@@ -198,11 +199,13 @@ header nav li:hover ul li {
     width: 100%;
     height: 100%;
     position: absolute;
+    z-index: 1;
 }
 
 .burger-house .burger-house-text {
     display: inline-flex;
     position: absolute;
+    z-index: 1;
 }
 
 .burger-house .burger-house-text:nth-of-type(1) {
@@ -308,38 +311,50 @@ header nav li:hover ul li {
 }
 
 .main-photos {
-    position: relative;
+    width: 100%;
     height: 700px;
+    margin: auto;
     overflow: hidden;
+    z-index: 0;
+    transition: 1s;
+    position: relative;
+
 }
 
-.main-photo {
-    min-height: 100%;
-    position: absolute;
+.main-photos .main-photo {
     width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 0;
+    transition: 1s;
+    visibility: hidden;
 }
 
 .main-photo:nth-of-type(1) {
-    background: url('photos/environment.jpg');
+    background: url('photos/environment3.jpg');
     background-size: cover;
+    
 }
 
 .main-photo:nth-of-type(2) {
     background: url('photos/environment2.jpg');
     background-size: cover;
-    width: 100%;
+    
 }
 
 .main-photo:nth-of-type(3) {
-    background: url('photos/environment3.jpg');
+    background: url('photos/environment.jpg');
     background-size: cover;
+    
 }
 
-.main-photo img {
+.main-photos #arrow {
+    z-index: 5;
+    position: absolute;
+    bottom: 5%;
     width: 100%;
-    height: 700px;
-    position: relative;
-
+    text-align: center;
+    color: white;
 }
 
 .btn {
@@ -358,6 +373,7 @@ header nav li:hover ul li {
 #btn-1 {
     font-size: 18px;
     margin-left: 50px;
+    z-index: 999999;
 }
 
 #btn-2 {
@@ -365,6 +381,7 @@ header nav li:hover ul li {
     position: relative;
     font-size: 18px;
     margin-right: 50px;
+    z-index: 999999;
 }
 
 @media (max-width: 1278px) {
@@ -574,7 +591,7 @@ header nav li:hover ul li {
 }
 
 .findwrap .findnear nav ul {
-    list-style:none;
+    list-style: none;
 }
 
 .findnear input {
@@ -1792,12 +1809,12 @@ header nav li:hover ul li {
         font-size: 28px;
         margin: 10px 0 0 0;
     }
-    
+
     .logo .burger img {
         width: 50px;
         margin: 35px 0 0 0;
     }
-    
+
     .hamburger span {
         font-size: 28px;
         margin: -100px 0 0 0;
@@ -1907,13 +1924,13 @@ header nav li:hover ul li {
         min-height: 500px;
         background-size: cover;
     }
-    
+
     .logo .burger h1 {
         float: left;
         font-size: 25px;
         margin: 15px 0 0 0;
     }
-    
+
     .logo .burger img {
         width: 50px;
         margin: 35px 0 0 0;

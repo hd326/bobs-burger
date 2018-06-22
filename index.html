@@ -10,77 +10,85 @@
     <title>Bobs' Burgers</title>
 </head>
 
-<body>
+<body onload="Load()">
     <header>
         <div class="header-con">
             <div class=logo>
-               <div class="burger"><!--<img src="photos/burger.png">--></div>
-                <div class="burger"><h1>Bobs' Burgerhouse</h1></div>
+                <div class="burger">
+                    <!--<img src="photos/burger.png">--></div>
+                <div class="burger">
+                    <h1>Bobs' Burgerhouse</h1>
+                </div>
             </div>
-            <div class="nav"><nav>
-                <ul>
-                    <li class="nav-menu"><a href=#>Locations</a>
-                        <ul class="menu-drop">
-                            <li>Search</li>
-                            <li>We're growing</li>
-                        </ul>
-                    </li>
-                    <li class="nav-menu"><a href=#>Menu</a>
-                        <ul class="menu-drop">
-                            <li>Nutrition & allergen</li>
-                            <li>Order Online</li>
-                            <li>Our Food</li>
-                        </ul>
-                    </li>
-                    <li class="nav-menu"><a href=#>Club and Cards</a>
-                        <ul class="menu-drop">
-                            <li>Weekly Offers</li>
-                            <li>e-Gift cards</li>
-                        </ul>
-                    </li>
-                    <li class="nav-menu"><a href=#>About Us</a>
-                        <ul class="menu-drop">
-                            <li>Our Story</li>
-                            <li>Careers</li>
-                        </ul>
-                    </li>
-                    <li class="nav-menu"><a href=#>TALK TO US</a>
-                        <ul class="menu-drop">
-                            <li>Contacts</li>
-                            <li>Barnies' Social</li>
-                        </ul>
-                    </li>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li class="nav-menu"><a href=#>Locations</a>
+                            <ul class="menu-drop">
+                                <li>Search</li>
+                                <li>We're growing</li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu"><a href=#>Menu</a>
+                            <ul class="menu-drop">
+                                <li>Nutrition & allergen</li>
+                                <li>Order Online</li>
+                                <li>Our Food</li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu"><a href=#>Club and Cards</a>
+                            <ul class="menu-drop">
+                                <li>Weekly Offers</li>
+                                <li>e-Gift cards</li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu"><a href=#>About Us</a>
+                            <ul class="menu-drop">
+                                <li>Our Story</li>
+                                <li>Careers</li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu"><a href=#>TALK TO US</a>
+                            <ul class="menu-drop">
+                                <li>Contacts</li>
+                                <li>Barnies' Social</li>
+                            </ul>
+                        </li>
 
-                    <li class=social-media>
-                        <ul>
-                            <li><span class="fa fa-facebook"></span></li>
-                            <li><span class="fa fa-twitter"></span></li>
-                            <li><span class="fa fa-instagram"></span></li>
-                        </ul>
-                    </li>
-                    <li class=hamburger><span class="fa fa-bars fa-3x"></span></li>
+                        <li class=social-media>
+                            <ul>
+                                <li><span class="fa fa-facebook"></span></li>
+                                <li><span class="fa fa-twitter"></span></li>
+                                <li><span class="fa fa-instagram"></span></li>
+                            </ul>
+                        </li>
+                        <li class=hamburger><span class="fa fa-bars fa-3x"></span></li>
 
-                </ul>
-            </nav>
+                    </ul>
+                </nav>
             </div>
         </div>
     </header>
 
     <div class="main-photos">
-        <button class="btn" onClick="slideImage(-1)" id="btn-1">&#10094;</button>
-        <button class="btn" onClick="slideImage(1)" id="btn-2">&#10095;</button>
+        <!--<button class="btn" onClick="prev()" id="btn-1">&#10094;</button>
+        <button class="btn" onClick="next()" id="btn-2">&#10095;</button>-->
         <!--<div class="main-photo"><img src=photos/environment.jpg></div>
         <div class="main-photo"><img src=photos/environment2.jpg></div>
         <div class="main-photo"><img src=photos/environment3.jpg></div>-->
-        <div class="main-photo"></div>
-        <div class="main-photo"></div>
-        <div class="main-photo"></div>
+
+        <div id="Img3" class="main-photo"></div>
+        <div id="Img2" class="main-photo"></div>
+        <div id="Img1" class="main-photo"></div>
+
+        <button class="btn" onclick="prev()" id="btn-1">&#10094;</button>
+        <button class="btn" onclick="next()" id="btn-2">&#10095;</button>
         <div class="burger-house">
             <!--<p><span id="welcome">Welcome</span> <span id="to-letter">to</span> <span id="bobs">Bobs' Burgerhouse</span></p>-->
             <div id="burger-house-holder">
 
                 <div class="burger-house-text">
-                   
+
                     <div class="burger-house-text-holder">
                         <div class="burger-house-text-holder2">Welcome</div>
                     </div>
@@ -112,19 +120,16 @@
                 </nav>-->
             </div>
         </div>
+        <div id="arrow"><span class="fa fa-chevron-down fa-3x"></span></div>
     </div>
 
     <script src="jquery-3.2.1.js"></script>
     <script src="jquery-ui.min.js"></script>
-    <script>
-    
-    
-    </script>
-       
-       
-       
-       
-       
+
+
+
+
+
     <script>
         $(function() {
 
@@ -167,40 +172,40 @@
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').css({
                 'left': '-200px'
             });
-            
+
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(2)').css({
                 'left': '-200px'
             });
-            
+
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(3)').css({
                 'right': '-200px'
             });
-            
+
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(4)').css({
                 'right': '-200px'
             });
-            
+
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').hide().animate({
                 left: 0,
                 opacity: "show"
             }, 1500);
-            
+
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(2)').hide().animate({
                 left: 0,
                 opacity: "show"
             }, 1500);
-            
+
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(3)').hide().animate({
                 right: 0,
                 opacity: "show"
             }, 1500);
-            
+
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(4)').hide().animate({
                 right: 0,
                 opacity: "show"
             }, 1500);
-            
-            
+
+
             /*
             
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').css({
@@ -532,7 +537,7 @@
 
     <script src="jquery-3.2.1.js"></script>
 
-    <script>
+    <script type="text/javascript">
         $(function() {
             $('.instagram-pics').hover(
                 function() {
@@ -543,9 +548,53 @@
                     $('.instagram-text', this).fadeOut();
                 },
             );
+                
+            $("#arrow span").click(function() {
+                $('html, body').animate({
+                    scrollTop: $(".findnear").offset().top
+                }, 1000);
+            });
         });
     </script>
+    <script type="text/javascript">
+        var Img = 3;
+        var Seconds = 4;
 
+        function Load() {
+            Shown = 0;
+            Vector = new Array;
+            Vector[0] = document.getElementById("Img1");
+            Vector[0].style.visibility = "visible";
+            for (var i = 1; i < Img; i++) {
+                Vector[i] = document.getElementById("Img" + (i + 1));
+            }
+        }
+
+        function next() {
+            Shown++;
+            if (Shown == Img)
+                Shown = 0;
+            Effect();
+        }
+
+        function prev() {
+            Shown--;
+            if (Shown == -1)
+                Shown = Img - 1;
+            Effect();
+        }
+
+        function Effect() {
+            for (var i = 0; i < Img; i++) {
+                Vector[i].style.opacity = "0";
+                Vector[i].style.visibility = "hidden";
+            }
+            Vector[Shown].style.opacity = "1";
+            Vector[Shown].style.visibility = "visible";
+        }
+    </script>
+    <!--
+   
     <script>
         var index = 1;
 
@@ -578,6 +627,7 @@
 
         console.log(y);
     </script>
+-->
 
 
 </body>
