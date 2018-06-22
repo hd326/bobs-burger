@@ -548,12 +548,39 @@
                     $('.instagram-text', this).fadeOut();
                 },
             );
-                
+
             $("#arrow span").click(function() {
                 $('html, body').animate({
                     scrollTop: $(".findnear").offset().top
                 }, 1000);
             });
+/*
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 10) {
+                    $('header').css({
+                        position: 'fixed',
+                        top: '0',
+                        transition: '1s ease',
+                        width: '100%'
+                    });
+                    $('.main-photos').css({
+                        marginTop: '105px'
+                    });
+
+                    $('.social-media').css({
+                        position: 'fixed'
+                    });
+                } else {
+                    $('header').css({
+                        position: 'fixed',
+                        top: '0',
+                        transition: '1s ease',
+                        width: '100%'
+                    });
+                }
+            });
+*/
+
         });
     </script>
     <script type="text/javascript">

@@ -10,7 +10,7 @@ body {
 
 header {
     font-family: Bungee;
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: grey;
     border-bottom: 3px solid black;
     z-index: 5555;
     display: grid;
@@ -31,6 +31,10 @@ header .header-con {
     .logo .burger h1 {
         font-size: 40px;
         transform: translateY(11%);
+    }
+
+    .main-photos #arrow {
+        font-size: 10px;
     }
 
 }
@@ -63,8 +67,8 @@ header .header-con {
 }
 
 .social-media {
-    position:absolute;
-    top: -2%;
+    position: absolute;
+    top: -1%;
     color: white;
 }
 
@@ -318,6 +322,7 @@ header nav li:hover ul li {
     z-index: 0;
     transition: 1s;
     position: relative;
+    border-bottom: 3px solid black;
 
 }
 
@@ -333,19 +338,19 @@ header nav li:hover ul li {
 .main-photo:nth-of-type(1) {
     background: url('photos/environment3.jpg');
     background-size: cover;
-    
+
 }
 
 .main-photo:nth-of-type(2) {
     background: url('photos/environment2.jpg');
     background-size: cover;
-    
+
 }
 
 .main-photo:nth-of-type(3) {
     background: url('photos/environment.jpg');
     background-size: cover;
-    
+
 }
 
 .main-photos #arrow {
@@ -354,7 +359,7 @@ header nav li:hover ul li {
     bottom: 5%;
     width: 100%;
     text-align: center;
-    color: white;
+    color: #ebebeb;
 }
 
 .btn {
@@ -405,6 +410,10 @@ header nav li:hover ul li {
 
     .burger-house {
         font-size: 6vw;
+    }
+
+    .main-photos #arrow {
+        font-size: 10px;
     }
 
     .btn {
@@ -1527,7 +1536,7 @@ header nav li:hover ul li {
 
     .food-container .food-menu:nth-of-type(2) {
         float: left;
-        
+
         min-height: 500px;
         background-size: cover;
     }
@@ -1612,8 +1621,8 @@ header nav li:hover ul li {
         min-height: 500px;
         background-size: cover;
     }
-    
-    
+
+
     .food-container .food-menu:nth-of-type(2) {
         background: url(photos/burger111.jpg) no-repeat 0;
         min-height: 500px;
@@ -1757,6 +1766,10 @@ header nav li:hover ul li {
 
     header .social-m ul li a {
         color: white;
+    }
+
+    .main-photos #arrow {
+        font-size: 5px;
     }
 
     .social-hour {
