@@ -1,4 +1,18 @@
-* {
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Old Standard TT|Bungee|Passion One|Shrikhan|Slabo+27px|Roboto|Oswald|Lato" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>Bobs' Burgers</title>
+</head>
+
+<style>
+    
+    * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -922,7 +936,7 @@ header nav li:hover ul li {
 }
 
 .social-events .social-text p {
-    font-size: 1.1vw;
+    font-size: 18px;
     font-family: old standard tt;
 }
 
@@ -1003,15 +1017,6 @@ header nav li:hover ul li {
     position: relative;
 }
 
-.instagram-sec .instagram-pics:nth-of-type(7),
-.instagram-sec .instagram-pics:nth-of-type(8),
-.instagram-sec .instagram-pics:nth-of-type(9),
-.instagram-sec .instagram-pics:nth-of-type(10),
-.instagram-sec .instagram-pics:nth-of-type(11),
-.instagram-sec .instagram-pics:nth-of-type(12) {
-    margin-top: -5px;
-}
-
 .instagram-pics:hover img {
     filter: brightness(50%);
 }
@@ -1021,8 +1026,6 @@ header nav li:hover ul li {
     position: absolute;
     bottom: -20%;
     color: white;
-    font-size: .8vw;
-    letter-spacing: .5px;
     display: none;
     padding: 40px;
     width: 100%;
@@ -1334,16 +1337,6 @@ header nav li:hover ul li {
     .social-media {
         margin: -10px 0 0 20px;
     }
-
-    .instagram-sec .instagram-pics:nth-of-type(4),
-    .instagram-sec .instagram-pics:nth-of-type(5),
-    .instagram-sec .instagram-pics:nth-of-type(6)
-    {
-        margin-top: -5px
-    }
-    .instagram-text{
-        font-size:inherit;
-    }
 }
 
 @media (max-width:1436px) {
@@ -1583,10 +1576,6 @@ header nav li:hover ul li {
 
     .social-holder {
         width: 90%;
-    }
-    
-    .social-events .social-text p{
-        font-size: 18px;
     }
 }
 
@@ -2062,3 +2051,656 @@ header nav li:hover ul li {
         margin: -100px 0 0 0;
     }
 }
+
+    
+    </style>
+
+<body onload="Load()">
+    <header>
+        <div class="header-con">
+            <div class=logo>
+                <div class="burger">
+                    <!--<img src="photos/burger.png">--></div>
+                <div class="burger">
+                    <h1>Bobs' Burgerhouse</h1>
+                </div>
+            </div>
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li class="nav-menu"><a href=#>Locations</a>
+                            <ul class="menu-drop">
+                                <li>Search</li>
+                                <li>We're growing</li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu"><a href=#>Menu</a>
+                            <ul class="menu-drop">
+                                <li>Nutrition & allergen</li>
+                                <li>Order Online</li>
+                                <li>Our Food</li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu"><a href=#>Club and Cards</a>
+                            <ul class="menu-drop">
+                                <li>Weekly Offers</li>
+                                <li>e-Gift cards</li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu"><a href=#>About Us</a>
+                            <ul class="menu-drop">
+                                <li>Our Story</li>
+                                <li>Careers</li>
+                            </ul>
+                        </li>
+                        <li class="nav-menu"><a href=#>TALK TO US</a>
+                            <ul class="menu-drop">
+                                <li>Contacts</li>
+                                <li>Barnies' Social</li>
+                            </ul>
+                        </li>
+
+                        <li class=social-media>
+                            <ul>
+                                <li><span class="fa fa-facebook"></span></li>
+                                <li><span class="fa fa-twitter"></span></li>
+                                <li><span class="fa fa-instagram"></span></li>
+                            </ul>
+                        </li>
+                        <li class=hamburger><span class="fa fa-bars fa-3x"></span></li>
+
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="main-photos">
+        <!--<button class="btn" onClick="prev()" id="btn-1">&#10094;</button>
+        <button class="btn" onClick="next()" id="btn-2">&#10095;</button>-->
+        <!--<div class="main-photo"><img src=photos/environment.jpg></div>
+        <div class="main-photo"><img src=photos/environment2.jpg></div>
+        <div class="main-photo"><img src=photos/environment3.jpg></div>-->
+
+        <div id="Img3" class="main-photo"></div>
+        <div id="Img2" class="main-photo"></div>
+        <div id="Img1" class="main-photo"></div>
+
+        <button class="btn" onclick="prev()" id="btn-1">&#10094;</button>
+        <button class="btn" onclick="next()" id="btn-2">&#10095;</button>
+        <div class="burger-house">
+            <!--<p><span id="welcome">Welcome</span> <span id="to-letter">to</span> <span id="bobs">Bobs' Burgerhouse</span></p>-->
+            <div id="burger-house-holder">
+
+                <div class="burger-house-text">
+
+                    <div class="burger-house-text-holder">
+                        <div class="burger-house-text-holder2">Welcome</div>
+                    </div>
+                </div>
+                <div class="burger-house-text">
+                    <div class="burger-house-text-holder">
+                        <div class="burger-house-text-holder2">To</div>
+                    </div>
+                </div>
+
+                <div class="burger-house-text">
+                    <div class="burger-house-text-holder2">
+                        <div class="burger-house-text-holder">Bobs'</div>
+                    </div>
+                </div>
+                <div class="burger-house-text">
+                    <div class="burger-house-text-holder">
+                        <div class="burger-house-text-holder2">Burgerhouse</div>
+                    </div>
+                </div>
+
+                <!--<nav>
+                    <ul>
+                        <span id="text-holder"><span id="text-placer"><li>Welcome</li></span></span>
+                        <span id="text-holder"><span id="text-placer"><li>to</li></span></span>
+                        <span id="text-holder"><span id="text-placer"><li>Bobs' Burgerhouse</span></li>
+                        </span>
+                    </ul>
+                </nav>-->
+            </div>
+        </div>
+        <div id="arrow"><span class="fa fa-chevron-down fa-3x"></span></div>
+    </div>
+
+    <script src="jquery-3.2.1.js"></script>
+    <script src="jquery-ui.min.js"></script>
+
+
+
+
+
+    <script>
+        $(function() {
+
+            /*
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(1) li').hide().animate({
+                left: 0,
+                opacity: "show"
+            }, 1500);
+            
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(1) li').css({
+                'position': 'relative',
+                'float': 'none'
+            });
+
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(2)').hide().animate({
+                left: 0,
+                opacity: "show"
+            }, 1500);
+
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(2)').css({
+                'position': 'relative',
+                'float': 'none'
+            });
+
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(3)').hide().animate({
+                right: 0,
+                opacity: "show"
+            }, 1500);
+
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(3)').css({
+                'position': 'relative',
+                'float': 'none'
+            });
+            */
+            /*
+            $('#burger-house-holder nav ul #text-holder:nth-of-type(1)').show("slide", {
+                direction: 'left'
+            }, "slow");
+            */
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').css({
+                'left': '-200px'
+            });
+
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(2)').css({
+                'left': '-200px'
+            });
+
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(3)').css({
+                'right': '-200px'
+            });
+
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(4)').css({
+                'right': '-200px'
+            });
+
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').hide().animate({
+                left: 0,
+                opacity: "show"
+            }, 1500);
+
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(2)').hide().animate({
+                left: 0,
+                opacity: "show"
+            }, 1500);
+
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(3)').hide().animate({
+                right: 0,
+                opacity: "show"
+            }, 1500);
+
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(4)').hide().animate({
+                right: 0,
+                opacity: "show"
+            }, 1500);
+
+
+            /*
+            
+            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').css({
+                'position': 'relative',
+                'float': 'none'
+            });
+            
+            */
+
+            /*
+            $('#burger-house-holder nav ul #text-holder')
+                .css('opacity', 0)
+                .slideDown('slow')
+                .animate({
+                    opacity: 1
+                }, {
+                    queue: false,
+                    duration: 'slow'
+                });
+                */
+
+            /*
+            $('#burger-house-holder #text-holder(1)').hide().animate({
+                right: 200,
+                opacity: "show"
+            }, 1500);
+
+            $('#burger-house-holder #text-holder(1)').css({
+                'position': 'relative'
+            });
+            */
+        });
+    </script>
+
+
+
+    <div class="findwrap">
+        <div class="findnear">
+            <nav>
+                <ul>
+                    <li>
+                        <h3>LOCATIONS NEAR YOU</h3>
+                    </li>
+                    <li>
+                        <form><input type="text" placeholder="Enter zip or city, state"></form>
+                    </li>
+                    <li><button type="submit"><span>SEARCH</span></button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="states-section">
+        <div class="states-container">
+            <div class="top-states" data-title="SOUTHERN CALIFORNIA">
+            </div>
+            <div class="top-states" data-title="NORTHERN CALIFORNIA">
+            </div>
+            <div class="bottom-states" data-title="LAS VEGAS">
+            </div>
+            <div class="bottom-states" data-title="CHICAGO">
+            </div>
+            <div class="bottom-states" data-title="NEW YORK">
+            </div>
+            <div class="bottom-states" data-title="JAPAN">
+            </div>
+        </div>
+    </div>
+
+    <div class="food-section">
+        <div class=findnear>
+            <nav>
+                <ul>
+                    <li>
+                        <h3>EXPLORE OUR MENU</h3>
+                    </li>
+                    <li><button type="submit">VIEW FULL MENU</button></li>
+                </ul>
+            </nav>
+        </div>
+        <div class='food-container'>
+            <div class='food-menu' data-text="Whole Crisp Original">
+            </div>
+            <div class='food-menu' data-text="Charlotte Mustard">
+            </div>
+            <div class='food-menu' data-text="Louisiana Burger">
+            </div>
+            <div class='food-menu' data-text="Denver Crispy">
+            </div>
+            <div class='food-menu2'>
+            </div>
+            <div class='food-menu2'>
+            </div>
+            <div class='food-menu2'>
+            </div>
+            <div class='food-menu2'>
+            </div>
+        </div>
+    </div>
+
+    <div class="social-section">
+        <div class=findnear>
+            <nav>
+                <ul>
+                    <li>
+                        <h3>HAVE A STOP AT BOBS</h3>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="social-intro">
+            <p><span>(Lorem Ipsum)</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque neque orci, dictum vitae tellus quis, sodales ultricies risus. Donec suscipit porta erat, vitae lacinia mi ullamcorper non. Phasellus feugiat arcu id velit dictum congue a in elit. Cras tincidunt nunc sit amet arcu sagittis vulputate. Vestibulum eu velit vel dui varius tempus ut id eros. Praesent suscipit, mi at pretium mollis, mi orci faucibus erat, sollicitudin faucibus erat augue sit amet elit. Aliquam vitae lorem pulvinar, condimentum sapien eget, sollicitudin lectus. </p>
+        </div>
+
+        <div class="social-holder">
+            <div class="social-events">
+                <div class="social-text">
+                    <h4>ONLY BY US</h4>
+                    <p>All our new menu items, promotions, and deals of the day. Check us out!</p>
+                    <button type="button">LEARN MORE</button>
+                </div>
+
+            </div>
+            <div class="social-hour">
+                <div class="social-text">
+                    <h4>SPORTS</h4>
+                    <p>Come join us as we have discounts on appetizers, burgers, and drinks. It doesn't get any better than this!</p>
+                    <button type="button">LEARN MORE</button>
+                </div>
+
+            </div>
+            <div class="social-events">
+                <div class="social-text">
+                    <h4>SPECIALS</h4>
+                    <p>Custom events and catering for a quality experience with an awesome burger, anywhere, anytime.</p>
+                    <button type="button">LEARN MORE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="instagram-sec">
+        <div class=findnear>
+            <nav>
+                <ul>
+                    <li>
+                        <h3>OUR INSTAGRAM</h3>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <div class="instagram-pics"><img src="photos/burger11.jpg">
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+        </div>
+        <div class="instagram-pics"><img src="photos/burger22.jpg">
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+        </div>
+        <div class="instagram-pics"><img src="photos/burger33.jpg">
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+        </div>
+        <div class="instagram-pics"><img src="photos/burger44.jpg">
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+        </div>
+        <div class="instagram-pics"><img src="photos/burger55.jpg">
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+        </div>
+
+        <div class="instagram-pics"><img src="photos/burger66.jpg">
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+        </div>
+        <div class="instagram-pics"><img src="photos/burger77.jpg">
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+        </div>
+        <div class="instagram-pics"><img src="photos/burger88.jpg">
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+        </div>
+        <div class="instagram-pics"><img src="photos/burger99.jpg">
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+        </div>
+        <div class="instagram-pics"><img src="photos/burger111.jpg">
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+        </div>
+
+    </div>
+
+    <div class="newsletter">
+        <div class="news-sec">
+            <nav>
+                <ul>
+                    <li>
+                        <h3>SIGN UP FOR OUR COUPON LETTERS!</h3>
+                    </li>
+                    <li><button>SIGN UP</button></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="news">
+        <div class="news-box">
+            <h3>OUR RECENT BLOG</h3>
+            <p>VIEW ALL <span class="fa fa-play fa-1x"></span></p>
+
+            <img src="photos/blog.jpg">
+            <p id="blog-info">NOVEMBER 2017</p>
+            <h4>BURGERING WITH STYLE - THE REALIZATION THAT IT DOESN'T GET ANY BETTER.</h4>
+            <h5>READ MORE <span class="fa fa-play fa-1x"></span></h5>
+        </div>
+
+        <div class="news-box">
+            <img src="photos/blog2.jpg">
+            <p id="blog-info">DECEMBER 2017</p>
+            <h4>RECALLING THE BURGER-THON EVENT IN UNDER THE MONTANA NIGHT SKY.</h4>
+            <h5>READ MORE <span class="fa fa-play fa-1x"></span></h5>
+        </div>
+
+        <div class="news-box">
+
+            <h3 class>IN THE NEWS</h3>
+            <p>VIEW ALL <span class="fa fa-play fa-1x"></span></p>
+
+            <p id="blog-info">NOVEMBER 2017</p>
+            <h4 id=in-news-font>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ex non odio blandit lacinia.</h4>
+            <h6>NY TIMES <span class="fa fa-play fa-1x"></span></h6>
+
+            <p id="blog-info">OCTOBER 2017</p>
+            <h4 id=in-news-font>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ex non odio blandit lacinia.</h4>
+            <h6>SF DAILY <span class="fa fa-play fa-1x"></span></h6>
+            <p id="blog-info">SEPTEMBER 2017</p>
+            <h4 id=in-news-font>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ex non odio blandit lacinia.</h4>
+            <h6>WASHINGTON POST <span class="fa fa-play fa-1x"></span></h6>
+            <p id="blog-info">JUNE 2017</p>
+            <h4 id=in-news-font>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ex non odio blandit lacinia.</h4>
+            <h6>TIMES MAGAZINE <span class="fa fa-play fa-1x"></span></h6>
+        </div>
+
+    </div>
+
+    <div class=footer-space></div>
+
+    <div class="footer">
+        <div class="footer-links">
+            <nav>
+                <ul>
+                    <li><a href=#>MENU</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-links">
+            <nav>
+                <ul><a href=#>RESTAURANT LOCATIONS</a>
+                    <li><a href=#>Los Angeles</a></li>
+                    <li><a href=#>Orange County</a></li>
+                    <li><a href=#>New York</a></li>
+                    <li><a href=#>San Franciso</a></li>
+                    <li><a href=#>Chicago</a></li>
+                    <li><a href=#>Las Vegas</a></li>
+                    <li><a href=#>Japan</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-links">
+            <nav>
+                <ul>
+                    <li><a href=#>EVENTS AND CATERING</a></li>
+                    <li><a href=#>BLOG</a></li>
+                    <li><a href=#>IN THE NEWS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-links">
+            <nav>
+                <ul>
+                    <li><a href=#>OUR STORY</a></li>
+                    <li><a href=#>CAREERS</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-links">
+            <nav>
+                <ul>
+                    <li><a href=#>GIFT CARDS</a></li>
+
+                </ul>
+            </nav>
+        </div>
+
+        <div class="footer-links">
+            <nav>
+                <ul>
+                    <li><button type="button">CONTACT US<span class="fa fa-play"></span></button></li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+
+    <div class=footer-space2></div>
+
+    <div class=footer2>
+        <div class=footer2-links>
+            <li>&copy; BOBs' Burgerhouse Restaurant, All rights reserved.</li>
+        </div>
+        <div class=footer2-links>
+            <li>Privacy Policy</li>
+        </div>
+        <div class=footer2-links>
+            <li>Terms & Conditions</li>
+        </div>
+        <div class=footer2-links>
+            <li>Site Map</li>
+        </div>
+        <div class=footer2-links>
+            <li>follow us @bobsburgerhouse</li>
+        </div>
+        <div class=footer2-links>
+            <li><span class="fa fa-facebook"></span><span class="fa fa-instagram"></span>
+                <span class="fa fa-twitter"></span>
+                <span class="fa fa-envelope"></span></li>
+        </div>
+    </div>
+
+    <script src="jquery-3.2.1.js"></script>
+
+    <script type="text/javascript">
+        $(function() {
+            $('.instagram-pics').hover(
+                function() {
+                    $('.instagram-text', this).fadeIn();
+                },
+
+                function() {
+                    $('.instagram-text', this).fadeOut();
+                },
+            );
+
+            $("#arrow span").click(function() {
+                $('html, body').animate({
+                    scrollTop: $(".findnear").offset().top
+                }, 1000);
+            });
+/*
+            $(window).scroll(function() {
+                if ($(this).scrollTop() > 10) {
+                    $('header').css({
+                        position: 'fixed',
+                        top: '0',
+                        transition: '1s ease',
+                        width: '100%'
+                    });
+                    $('.main-photos').css({
+                        marginTop: '105px'
+                    });
+
+                    $('.social-media').css({
+                        position: 'fixed'
+                    });
+                } else {
+                    $('header').css({
+                        position: 'fixed',
+                        top: '0',
+                        transition: '1s ease',
+                        width: '100%'
+                    });
+                }
+            });
+*/
+
+        });
+    </script>
+    <script type="text/javascript">
+        var Img = 3;
+        var Seconds = 4;
+
+        function Load() {
+            Shown = 0;
+            Vector = new Array;
+            Vector[0] = document.getElementById("Img1");
+            Vector[0].style.visibility = "visible";
+            for (var i = 1; i < Img; i++) {
+                Vector[i] = document.getElementById("Img" + (i + 1));
+            }
+        }
+
+        function next() {
+            Shown++;
+            if (Shown == Img)
+                Shown = 0;
+            Effect();
+        }
+
+        function prev() {
+            Shown--;
+            if (Shown == -1)
+                Shown = Img - 1;
+            Effect();
+        }
+
+        function Effect() {
+            for (var i = 0; i < Img; i++) {
+                Vector[i].style.opacity = "0";
+                Vector[i].style.visibility = "hidden";
+            }
+            Vector[Shown].style.opacity = "1";
+            Vector[Shown].style.visibility = "visible";
+        }
+    </script>
+    <!--
+    <script>
+        var index = 1;
+
+        function slideImage(n) {
+            index = index + n;
+            slider(index);
+        }
+
+        slider(1);
+
+        function slider(n) {
+            var i;
+
+            var x = document.getElementsByClassName('main-photo');
+
+            for (i = 0; i < x.length; i++) {
+
+                if (n > x.length) {
+                    index = 1;
+                }
+                if (n < 1) {
+                    index = x.length;
+                }
+                x[i].style.display = "none";
+            }
+            x[index - 1].style.display = "block";
+        }
+
+        var y = document.getElementsByClassName('main-photo').length;
+
+        console.log(y);
+    </script>
+-->
+
+
+</body>
+
+</html>
