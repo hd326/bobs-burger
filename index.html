@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Old Standard TT|Bungee|Passion One|Shrikhan|Slabo+27px|Roboto|Oswald|Lato" rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
-    <title>Bobs' Burgers</title>
+    <title>Bob's Burgers</title>
 </head>
 
 <body onload="Load()">
@@ -17,7 +17,7 @@
                 <div class="burger">
                     <!--<img src="photos/burger.png">--></div>
                 <div class="burger">
-                    <h1>Bobs' Burgerhouse</h1>
+                    <h1>Bob's Burgerhouse</h1>
                 </div>
             </div>
             <div class="nav">
@@ -85,10 +85,9 @@
         <button class="btn" onclick="next()" id="btn-2">&#10095;</button>
         <div class="burger-house">
             <!--<p><span id="welcome">Welcome</span> <span id="to-letter">to</span> <span id="bobs">Bobs' Burgerhouse</span></p>-->
-            <div id="burger-house-holder">
-
+            
+            <!--<div id="burger-house-holder">
                 <div class="burger-house-text">
-
                     <div class="burger-house-text-holder">
                         <div class="burger-house-text-holder2">Welcome</div>
                     </div>
@@ -109,7 +108,7 @@
                         <div class="burger-house-text-holder2">Burgerhouse</div>
                     </div>
                 </div>
-
+            -->
                 <!--<nav>
                     <ul>
                         <span id="text-holder"><span id="text-placer"><li>Welcome</li></span></span>
@@ -119,9 +118,10 @@
                     </ul>
                 </nav>-->
             </div>
-        </div>
         <div id="arrow"><span class="fa fa-chevron-down fa-3x"></span></div>
-    </div>
+        </div>
+        
+    
 
     <script src="jquery-3.2.1.js"></script>
     <script src="jquery-ui.min.js"></script>
@@ -170,11 +170,11 @@
             }, "slow");
             */
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').css({
-                'left': '-200px'
+                'left': '-300px'
             });
 
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(2)').css({
-                'left': '-200px'
+                'left': '-200px',
             });
 
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(3)').css({
@@ -182,7 +182,7 @@
             });
 
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(4)').css({
-                'right': '-200px'
+                'right': '-300px'
             });
 
             $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').hide().animate({
@@ -514,7 +514,7 @@
 
     <div class=footer2>
         <div class=footer2-links>
-            <li>&copy; BOBs' Burgerhouse Restaurant, All rights reserved.</li>
+            <li>&copy; BOB's Burgerhouse Restaurant, All rights reserved.</li>
         </div>
         <div class=footer2-links>
             <li>Privacy Policy</li>
