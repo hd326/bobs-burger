@@ -5,7 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Old Standard TT|Bungee|Passion One|Shrikhan|Slabo+27px|Roboto|Oswald|Lato" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Old Standard TT|Bungee|Passion One|Shrikhan|Slabo+27px|Roboto|Oswald|Lato"
+        rel="stylesheet">
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <title>Bob's Burgers</title>
 </head>
@@ -13,10 +15,10 @@
 <body onload="Load()">
     <header>
         <div class="header-con">
-            <div class=logo>
-                <div class="burger">
-                    <!--<img src="photos/burger.png">--></div>
-                <div class="burger">
+            <div class="logo">
+                <div class="logo-sec">
+                    <img src="photos/burger.png"></div>
+                <div class="logo-sec">
                     <h1>Bob's Burgerhouse</h1>
                 </div>
             </div>
@@ -55,14 +57,14 @@
                             </ul>
                         </li>
 
-                        <li class=social-media>
+                        <li class="social-media">
                             <ul>
                                 <li><span class="fa fa-facebook"></span></li>
                                 <li><span class="fa fa-twitter"></span></li>
                                 <li><span class="fa fa-instagram"></span></li>
                             </ul>
                         </li>
-                        <li class=hamburger><span class="fa fa-bars fa-3x"></span></li>
+                        <li class="hamburger"><span class="fa fa-bars fa-3x"></span></li>
 
                     </ul>
                 </nav>
@@ -77,52 +79,39 @@
         <div class="main-photo"><img src=photos/environment2.jpg></div>
         <div class="main-photo"><img src=photos/environment3.jpg></div>-->
 
-        <div id="Img3" class="main-photo"></div>
-        <div id="Img2" class="main-photo"></div>
-        <div id="Img1" class="main-photo"></div>
+        <div id="Img3" class="main-photo">
+            <div class="main-photo-helper"></div>
+        </div>
+        <div id="Img2" class="main-photo">
+            <div class="main-photo-helper"></div>
+        </div>
+        <div id="Img1" class="main-photo">
+            <div class="main-photo-helper"></div>
+        </div>
 
         <button class="btn" onclick="prev()" id="btn-1">&#10094;</button>
         <button class="btn" onclick="next()" id="btn-2">&#10095;</button>
-        <div class="burger-house">
-            <!--<p><span id="welcome">Welcome</span> <span id="to-letter">to</span> <span id="bobs">Bobs' Burgerhouse</span></p>-->
-            
-            <div id="burger-house-holder">
-                <div class="burger-house-text">
-                    <div class="burger-house-text-holder2">
-                        <div class="burger-house-text-holder">Welcome</div>
-                    </div>
+        <div class="welcome">
+            <div id="welcome-text-holder">
+                <div class="welcome-text">
+                    Welcome
                 </div>
-                <div class="burger-house-text">
-                    <div class="burger-house-text-holder2">
-                        <div class="burger-house-text-holder">To</div>
-                    </div>
+                <div class="welcome-text">
+                    To
                 </div>
 
-                <div class="burger-house-text">
-                    <div class="burger-house-text-holder2">
-                        <div class="burger-house-text-holder">Bobs'</div>
-                    </div>
+                <div class="welcome-text">
+                    Bob's
                 </div>
-                <div class="burger-house-text">
-                    <div class="burger-house-text-holder2">
-                        <div class="burger-house-text-holder">Burgerhouse</div>
-                    </div>
+                <div class="welcome-text">
+                    Burgerhouse
                 </div>
-           
-                <!--<nav>
-                    <ul>
-                        <span id="text-holder"><span id="text-placer"><li>Welcome</li></span></span>
-                        <span id="text-holder"><span id="text-placer"><li>to</li></span></span>
-                        <span id="text-holder"><span id="text-placer"><li>Bobs' Burgerhouse</span></li>
-                        </span>
-                    </ul>
-                </nav>-->
             </div>
-        <div id="arrow"><span class="fa fa-chevron-down fa-3x"></span></div>
+            <div id="arrow"><span class="fa fa-chevron-down fa-3x"></span></div>
         </div>
-        </div>
-        
-    
+    </div>
+
+
 
     <script src="jquery-3.2.1.js"></script>
     <script src="jquery-ui.min.js"></script>
@@ -132,112 +121,42 @@
 
 
     <script>
-        $(function() {
-
-            /*
-            $('#burger-house-holder nav ul #text-holder:nth-of-type(1) li').hide().animate({
-                left: 0,
-                opacity: "show"
-            }, 1500);
-            
-            $('#burger-house-holder nav ul #text-holder:nth-of-type(1) li').css({
-                'position': 'relative',
-                'float': 'none'
+        $(function () {
+            $('.welcome #welcome-text-holder .welcome-text:nth-of-type(1)').css({
+                'left': '-200px'
             });
 
-            $('#burger-house-holder nav ul #text-holder:nth-of-type(2)').hide().animate({
-                left: 0,
-                opacity: "show"
-            }, 1500);
-
-            $('#burger-house-holder nav ul #text-holder:nth-of-type(2)').css({
-                'position': 'relative',
-                'float': 'none'
+            $('.welcome #welcome-text-holder .welcome-text:nth-of-type(2)').css({
+                'left': '-100px',
             });
 
-            $('#burger-house-holder nav ul #text-holder:nth-of-type(3)').hide().animate({
-                right: 0,
-                opacity: "show"
-            }, 1500);
-
-            $('#burger-house-holder nav ul #text-holder:nth-of-type(3)').css({
-                'position': 'relative',
-                'float': 'none'
-            });
-            */
-            /*
-            $('#burger-house-holder nav ul #text-holder:nth-of-type(1)').show("slide", {
-                direction: 'left'
-            }, "slow");
-            */
-            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').css({
-                'left': '-300px'
+            $('.welcome #welcome-text-holder .welcome-text:nth-of-type(3)').css({
+                'right': '-100px'
             });
 
-            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(2)').css({
-                'left': '-200px',
-            });
-
-            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(3)').css({
+            $('.welcome #welcome-text-holder .welcome-text:nth-of-type(4)').css({
                 'right': '-200px'
             });
 
-            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(4)').css({
-                'right': '-300px'
-            });
-
-            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').hide().animate({
+            $('.welcome #welcome-text-holder .welcome-text:nth-of-type(1)').hide().animate({
                 left: 0,
                 opacity: "show"
-            }, 1500);
+            }, 1000);
 
-            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(2)').hide().animate({
+            $('.welcome #welcome-text-holder .welcome-text:nth-of-type(2)').hide().animate({
                 left: 0,
                 opacity: "show"
-            }, 1500);
+            }, 1000);
 
-            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(3)').hide().animate({
+            $('.welcome #welcome-text-holder .welcome-text:nth-of-type(3)').hide().animate({
                 right: 0,
                 opacity: "show"
-            }, 1500);
+            }, 1000);
 
-            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(4)').hide().animate({
+            $('.welcome #welcome-text-holder .welcome-text:nth-of-type(4)').hide().animate({
                 right: 0,
                 opacity: "show"
-            }, 1500);
-
-
-            /*
-            
-            $('.burger-house #burger-house-holder .burger-house-text:nth-of-type(1)').css({
-                'position': 'relative',
-                'float': 'none'
-            });
-            
-            */
-
-            /*
-            $('#burger-house-holder nav ul #text-holder')
-                .css('opacity', 0)
-                .slideDown('slow')
-                .animate({
-                    opacity: 1
-                }, {
-                    queue: false,
-                    duration: 'slow'
-                });
-                */
-
-            /*
-            $('#burger-house-holder #text-holder(1)').hide().animate({
-                right: 200,
-                opacity: "show"
-            }, 1500);
-
-            $('#burger-house-holder #text-holder(1)').css({
-                'position': 'relative'
-            });
-            */
+            }, 1000);
         });
     </script>
 
@@ -296,14 +215,6 @@
             </div>
             <div class='food-menu' data-text="Denver Crispy">
             </div>
-            <div class='food-menu2'>
-            </div>
-            <div class='food-menu2'>
-            </div>
-            <div class='food-menu2'>
-            </div>
-            <div class='food-menu2'>
-            </div>
         </div>
     </div>
 
@@ -318,7 +229,12 @@
             </nav>
         </div>
         <div class="social-intro">
-            <p><span>(Lorem Ipsum)</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque neque orci, dictum vitae tellus quis, sodales ultricies risus. Donec suscipit porta erat, vitae lacinia mi ullamcorper non. Phasellus feugiat arcu id velit dictum congue a in elit. Cras tincidunt nunc sit amet arcu sagittis vulputate. Vestibulum eu velit vel dui varius tempus ut id eros. Praesent suscipit, mi at pretium mollis, mi orci faucibus erat, sollicitudin faucibus erat augue sit amet elit. Aliquam vitae lorem pulvinar, condimentum sapien eget, sollicitudin lectus. </p>
+            <p><span>(Lorem Ipsum)</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque neque orci,
+                dictum vitae tellus quis, sodales ultricies risus. Donec suscipit porta erat, vitae lacinia mi
+                ullamcorper non. Phasellus feugiat arcu id velit dictum congue a in elit. Cras tincidunt nunc sit amet
+                arcu sagittis vulputate. Vestibulum eu velit vel dui varius tempus ut id eros. Praesent suscipit, mi at
+                pretium mollis, mi orci faucibus erat, sollicitudin faucibus erat augue sit amet elit. Aliquam vitae
+                lorem pulvinar, condimentum sapien eget, sollicitudin lectus. </p>
         </div>
 
         <div class="social-holder">
@@ -333,7 +249,8 @@
             <div class="social-hour">
                 <div class="social-text">
                     <h4>SPORTS</h4>
-                    <p>Come join us as we have discounts on appetizers, burgers, and drinks. It doesn't get any better than this!</p>
+                    <p>Come join us as we have discounts on appetizers, burgers, and drinks. It doesn't get any better
+                        than this!</p>
                     <button type="button">LEARN MORE</button>
                 </div>
 
@@ -341,55 +258,67 @@
             <div class="social-events">
                 <div class="social-text">
                     <h4>SPECIALS</h4>
-                    <p>Custom events and catering for a quality experience with an awesome burger, anywhere, anytime.</p>
+                    <p>Custom events and catering for a quality experience with an awesome burger, anywhere, anytime.
+                    </p>
                     <button type="button">LEARN MORE</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="instagram-sec">
-        <div class=findnear>
-            <nav>
-                <ul>
-                    <li>
-                        <h3>OUR INSTAGRAM</h3>
-                    </li>
-                </ul>
-            </nav>
+    <div class=findnear>
+        <nav>
+            <ul>
+                <li>
+                    <h3 style="font-size: 50px">OUR INSTAGRAM</h3>
+                </li>
+            </ul>
+        </nav>
 
-        </div>
+    </div>
+
+    <div class="instagram-sec">
 
         <div class="instagram-pics"><img src="photos/burger11.jpg">
-            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
+                felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
         <div class="instagram-pics"><img src="photos/burger22.jpg">
-            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
+                felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
         <div class="instagram-pics"><img src="photos/burger33.jpg">
-            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
+                felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
         <div class="instagram-pics"><img src="photos/burger44.jpg">
-            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
+                felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
         <div class="instagram-pics"><img src="photos/burger55.jpg">
-            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
+                felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
 
         <div class="instagram-pics"><img src="photos/burger66.jpg">
-            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
+                felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
         <div class="instagram-pics"><img src="photos/burger77.jpg">
-            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
+                felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
         <div class="instagram-pics"><img src="photos/burger88.jpg">
-            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
+                felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
         <div class="instagram-pics"><img src="photos/burger99.jpg">
-            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
+                felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
         <div class="instagram-pics"><img src="photos/burger111.jpg">
-            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit, felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
+            <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
+                felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
 
     </div>
@@ -431,17 +360,21 @@
             <p>VIEW ALL <span class="fa fa-play fa-1x"></span></p>
 
             <p id="blog-info">NOVEMBER 2017</p>
-            <h4 id=in-news-font>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ex non odio blandit lacinia.</h4>
+            <h4 id=in-news-font>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ex non odio
+                blandit lacinia.</h4>
             <h6>NY TIMES <span class="fa fa-play fa-1x"></span></h6>
 
             <p id="blog-info">OCTOBER 2017</p>
-            <h4 id=in-news-font>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ex non odio blandit lacinia.</h4>
+            <h4 id=in-news-font>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ex non odio
+                blandit lacinia.</h4>
             <h6>SF DAILY <span class="fa fa-play fa-1x"></span></h6>
             <p id="blog-info">SEPTEMBER 2017</p>
-            <h4 id=in-news-font>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ex non odio blandit lacinia.</h4>
+            <h4 id=in-news-font>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ex non odio
+                blandit lacinia.</h4>
             <h6>WASHINGTON POST <span class="fa fa-play fa-1x"></span></h6>
             <p id="blog-info">JUNE 2017</p>
-            <h4 id=in-news-font>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ex non odio blandit lacinia.</h4>
+            <h4 id=in-news-font>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus porttitor ex non odio
+                blandit lacinia.</h4>
             <h6>TIMES MAGAZINE <span class="fa fa-play fa-1x"></span></h6>
         </div>
 
@@ -539,48 +472,48 @@
     <script src="jquery-3.2.1.js"></script>
 
     <script type="text/javascript">
-        $(function() {
+        $(function () {
             $('.instagram-pics').hover(
-                function() {
+                function () {
                     $('.instagram-text', this).fadeIn();
                 },
 
-                function() {
+                function () {
                     $('.instagram-text', this).fadeOut();
                 },
             );
 
-            $("#arrow span").click(function() {
+            $("#arrow span").click(function () {
                 $('html, body').animate({
                     scrollTop: $(".findnear").offset().top
                 }, 1000);
             });
-/*
-            $(window).scroll(function() {
-                if ($(this).scrollTop() > 10) {
-                    $('header').css({
-                        position: 'fixed',
-                        top: '0',
-                        transition: '1s ease',
-                        width: '100%'
-                    });
-                    $('.main-photos').css({
-                        marginTop: '105px'
-                    });
+            /*
+                        $(window).scroll(function() {
+                            if ($(this).scrollTop() > 10) {
+                                $('header').css({
+                                    position: 'fixed',
+                                    top: '0',
+                                    transition: '1s ease',
+                                    width: '100%'
+                                });
+                                $('.main-photos').css({
+                                    marginTop: '105px'
+                                });
 
-                    $('.social-media').css({
-                        position: 'fixed'
-                    });
-                } else {
-                    $('header').css({
-                        position: 'fixed',
-                        top: '0',
-                        transition: '1s ease',
-                        width: '100%'
-                    });
-                }
-            });
-*/
+                                $('.social-media').css({
+                                    position: 'fixed'
+                                });
+                            } else {
+                                $('header').css({
+                                    position: 'fixed',
+                                    top: '0',
+                                    transition: '1s ease',
+                                    width: '100%'
+                                });
+                            }
+                        });
+            */
 
         });
     </script>
