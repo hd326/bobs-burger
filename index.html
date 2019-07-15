@@ -25,7 +25,7 @@
             <div class="nav">
                 <nav>
                     <ul>
-                        <li class="nav-menu"><a href=#>Locations</a>
+                        <li class="nav-menu"><a href=#>Order online</a>
                             <ul class="menu-drop">
                                 <li>Search</li>
                                 <li>We're growing</li>
@@ -38,25 +38,24 @@
                                 <li>Our Food</li>
                             </ul>
                         </li>
-                        <li class="nav-menu"><a href=#>Club and Cards</a>
+                        <li class="nav-menu"><a href=#>Locations</a>
                             <ul class="menu-drop">
                                 <li>Weekly Offers</li>
                                 <li>e-Gift cards</li>
                             </ul>
                         </li>
-                        <li class="nav-menu"><a href=#>About Us</a>
-                            <ul class="menu-drop">
-                                <li>Our Story</li>
-                                <li>Careers</li>
-                            </ul>
-                        </li>
-                        <li class="nav-menu"><a href=#>TALK TO US</a>
+                        <li class="nav-menu"><a href=#>Catering</a>
                             <ul class="menu-drop">
                                 <li>Contacts</li>
                                 <li>Barnies' Social</li>
                             </ul>
                         </li>
-
+                        <li class="nav-menu"><a href=#>About Us</a>
+                            <!--<ul class="menu-drop">
+                                <li>Our Story</li>
+                                <li>Careers</li>
+                            </ul>-->
+                        </li>
                         <li class="social-media">
                             <ul>
                                 <li><span class="fa fa-facebook"></span></li>
@@ -107,10 +106,10 @@
                     Burgerhouse
                 </div>
             </div>-->
-        <div class="intro">Welcome to Bob's
+        <div class="intro">
             <div>Home of the handcrafted</div>
             <div>premium burgers since 1948.</div>
-            <!--<div><button>VIEW MENU</button></div>-->
+            <div><button>VIEW OUR MENU</button></div>
         </div>
         <div id="arrow"><span class="fa fa-chevron-down fa-3x"></span></div>
     </div>
@@ -120,7 +119,15 @@
 
     <script>
         $(function () {
-            $('.welcome #welcome-text-holder .welcome-text:nth-of-type(1)').css({
+            $('.instagram-pics').hover(
+                function(){
+                    $('.instagram-helper', this).fadeIn(5);
+                },
+                function(){    
+                    $('.instagram-helper', this).fadeOut();
+                },
+            );
+            /*$('.welcome #welcome-text-holder .welcome-text:nth-of-type(1)').css({
                 'left': '-200px'
             });
 
@@ -154,18 +161,18 @@
             $('.welcome #welcome-text-holder .welcome-text:nth-of-type(4)').hide().animate({
                 right: 0,
                 opacity: "show"
-            }, 1000);
+            }, 1000);*/
         });
     </script>
 
 
 
     <div class="findwrap">
-        <div class="findnear">
+        <div class="divider">
             <nav>
                 <ul>
                     <li>
-                        <h3>LOCATIONS NEAR YOU</h3>
+                        <h3 style="font-size: 24px;">FIND A LOCATION NEAR YOU:</h3>
                     </li>
                     <li>
                         <form><input type="text" placeholder="Enter zip or city, state"></form>
@@ -178,10 +185,15 @@
 
     <div class="states-section">
         <div class="states-container">
+            <div class="states-container-top">
+
             <div class="top-states" data-title="SOUTHERN CALIFORNIA">
             </div>
             <div class="top-states" data-title="NORTHERN CALIFORNIA">
             </div>
+                            </div>
+            <div class="states-container-bottom">
+
             <div class="bottom-states" data-title="LAS VEGAS">
             </div>
             <div class="bottom-states" data-title="CHICAGO">
@@ -190,15 +202,16 @@
             </div>
             <div class="bottom-states" data-title="JAPAN">
             </div>
+                            </div>
         </div>
     </div>
 
     <div class="food-section">
-        <div class=findnear>
+        <div class="divider">
             <nav>
                 <ul>
                     <li>
-                        <h3>HAVE A LOOK AT OUR MENU</h3>
+                        <h3>EXPLORE OUR MENU</h3>
                     </li>
                     <li><button type="submit">VIEW FULL MENU</button></li>
                 </ul>
@@ -217,11 +230,11 @@
     </div>
 
     <div class="social-section">
-        <div class=findnear>
+        <div class="divider">
             <nav>
                 <ul>
                     <li>
-                        <h3>HAVE A STOP AT BOBS</h3>
+                        <h3>JOIN US FOR A GOOD TIME!</h3>
                     </li>
                 </ul>
             </nav>
@@ -264,7 +277,7 @@
         </div>
     </div>
 
-    <div class=findnear>
+    <div class=divider>
         <nav>
             <ul>
                 <li>
@@ -277,44 +290,44 @@
 
     <div class="instagram-sec">
 
-        <div class="instagram-pics"><img src="photos/burger11.jpg">
+        <div class="instagram-pics"><div class="instagram-helper"></div>
             <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
                 felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
-        <div class="instagram-pics"><img src="photos/burger22.jpg">
+            <div class="instagram-pics"><div class="instagram-helper"></div>
             <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
                 felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
-        <div class="instagram-pics"><img src="photos/burger33.jpg">
+            <div class="instagram-pics"><div class="instagram-helper"></div>
             <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
                 felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
-        <div class="instagram-pics"><img src="photos/burger44.jpg">
+            <div class="instagram-pics"><div class="instagram-helper"></div>
             <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
                 felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
-        <div class="instagram-pics"><img src="photos/burger55.jpg">
+            <div class="instagram-pics"><div class="instagram-helper"></div>
             <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
                 felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
 
-        <div class="instagram-pics"><img src="photos/burger66.jpg">
+            <div class="instagram-pics"><div class="instagram-helper"></div>
             <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
                 felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
-        <div class="instagram-pics"><img src="photos/burger77.jpg">
+            <div class="instagram-pics"><div class="instagram-helper"></div>
             <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
                 felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
-        <div class="instagram-pics"><img src="photos/burger88.jpg">
+            <div class="instagram-pics"><div class="instagram-helper"></div>
             <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
                 felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
-        <div class="instagram-pics"><img src="photos/burger99.jpg">
+            <div class="instagram-pics"><div class="instagram-helper"></div>
             <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
                 felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
-        <div class="instagram-pics"><img src="photos/burger111.jpg">
+            <div class="instagram-pics"><div class="instagram-helper"></div>
             <div class="instagram-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent suscipit,
                 felis nec rutrum accumsan, eros libero ultrices felis, in maximus ipsum mauris sed elit. </div>
         </div>
@@ -483,7 +496,7 @@
 
             $("#arrow span").click(function () {
                 $('html, body').animate({
-                    scrollTop: $(".findnear").offset().top
+                    scrollTop: $(".divider").offset().top
                 }, 1000);
             });
             /*
