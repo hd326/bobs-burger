@@ -560,6 +560,15 @@ header nav li:hover ul li {
     height: 350px;
 }
 
+@media (max-width: 991px) {
+    .states-container-top{
+        grid-template-columns: 1fr;
+    }
+    .states-container-bottom{
+        grid-template-columns: 1fr;
+    }
+}
+
 /* The Food Container Work */
 
 /* The Food Container Work */
@@ -1784,7 +1793,7 @@ header nav li:hover ul li {
 
     .logo img {
         width: 33px;
-        margin: 42..5px 0 0 0;
+        margin: 42.5px 0 0 0;
     }
 
     .hamburger span {
